@@ -37,8 +37,10 @@ header{
     
 }
 header.shadow{
-    background: var(--text-color);
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
     box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
+
 }
 header.shadow .navbar a{
     color: var(--bg-color);
@@ -270,7 +272,7 @@ section{
         color: var(--bg-color);
     }
     header.shadow #menu-icon{
-        color: var(--text-color);
+        color: var(--bg-color);
     }
     .navbar{
         position: absolute;
