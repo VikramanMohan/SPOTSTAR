@@ -37,8 +37,10 @@ header{
     
 }
 header.shadow{
-    background: var(--text-color);
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
     box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
+
 }
 header.shadow .navbar a{
     color: var(--bg-color);
@@ -139,6 +141,8 @@ header.shadow .logo{
     text-align: center;
     padding: 1px 20px 40px 0;
     letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(3, 14, 14, 0.5),0 0 20px rgba(11, 20, 20, 0.5);
+
 
 }
 h1{
@@ -148,6 +152,7 @@ h1{
     padding: 15 0 0px 0;
     font-weight: 600;
     letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(243, 243, 243, 0.5),0 0 20px rgba(212, 215, 215, 0.5);
 
 }
 .second-container{
@@ -186,3 +191,73 @@ h1{
     text-align: center;
 }
 
+
+/* responsive  */
+@media (max-width: 1080px){
+    .home-text{
+        padding: 0 100px;
+    }
+}
+@media (max-width: 991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 3%;
+    }
+    .home-text{
+        padding: 0 4%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 774px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--bg-color);
+    }
+    header.shadow #menu-icon{
+        color: var(--text-color);
+    }
+    .navbar{
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+        transition: 0.2s all linear;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar a{
+        color: var(--text-color);
+    }
+    .navbar a:hover{
+        color: var(--main-color);
+        border-bottom: 1px solid var(--main-color);
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    }
+}
