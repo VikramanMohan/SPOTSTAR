@@ -31,16 +31,18 @@
     </header>
     <!--Navigation-->
     <div class="movie-container">
-        <div class="movies" id="movies">
+        <div class="movies">
             <h2>Choose Language</h2>
-            <select id="Nav" onchange="MovieNav()">
+            <select id="movies" onchange="handleMovieNavigation()">
+                <option value="">Select Your Choice</option>
                 <option value="Tamil Movies">Tamil Movies</option>
                 <option value="English Movies">English Movies</option>
                 <option value="Malayalam Movies">Malayalam Movies</option>
             </select>
         </div> 
+        <div id="error" style="color: red; margin-top: 10px;"></div>
     </div>
-     </div>
+    
 <!--Suggests Movies-->
      <section class="coming" id="coming">
         <h2 class="heading">New Releases</h2>
@@ -155,22 +157,8 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   <script src="../JAVASCRIPT/movies.js"></script>
-    <script> 
-        function MovieNav() {
-            var choice = document.getElementById("Nav").value;
-                if (choice === 'Tamil Movies') {
-                    window.location.href = '../HTML/Tamil.html';
-                }
-            else if (choice === 'English Movies') {
-                window.location.href = '../HTML/English.html';
-             }
-            else if (choice === 'Malayalam Movies') {
-                window.location.href = '../HTML/Malayalam.html';
-             }
-            else { console.log("Invalid Choice"); 
-        }
-     }
-     </script>
+    <script src="../JAVASCRIPT/movieui.js"></script>
+    <script src="../JAVASCRIPT//movies.js"></script>
+
 </body>
 </html>
