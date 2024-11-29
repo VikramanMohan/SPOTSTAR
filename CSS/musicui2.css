@@ -36,10 +36,7 @@ header{
     transition: 0.5s;
     
 }
-header.shadow{
-    background: var(--text-color);
-    box-shadow: 0 0 4px rgb(14 55 54/15%);
-}
+
 header.shadow .navbar a{
     color: var(--bg-color);
 }
@@ -47,7 +44,12 @@ header.shadow .logo{
     color: var(--text-color);
 }
 
+header.shadow{
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
+    box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
 
+}
 .logodesign{
     align-items: center;
     color: var(--bg-color);
@@ -97,28 +99,7 @@ header.shadow .logo{
 .btn:hover{
     background: #fa1216;
 }
-/*.sug-img{
-    display: flex;
-    justify-content: center;
-    width: 1000px;
-    padding: 0px;
-    margin: 0px;
-}
-.sub-img {
-    height: 270px;
-    padding: 0px;
-    margin: 0px;
 
-    
-}
-.sub-img:hover{
-    height: 275px;
-    transform: scale(1.07);
-    transition: 0.2s all linear ;
-
-
-}
-*/
 .box .box-img{
     width: 250px;
     cursor: pointer;
@@ -321,5 +302,52 @@ audio{
         font-size: 3rem;
     }
 }
-
-
+@media (max-width: 774px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--bg-color);
+    }
+    header.shadow #menu-icon{
+        color: var(--bg-color);
+    }
+    .navbar{
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+        transition: 0.2s all linear;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar a{
+        color: var(--text-color);
+    }
+    .navbar a:hover{
+        color: var(--main-color);
+        border-bottom: 1px solid var(--main-color);
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    }
+}
