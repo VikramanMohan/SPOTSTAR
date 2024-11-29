@@ -36,6 +36,30 @@ header{
     transition: 0.5s;
     
 }
+/* Add shadow effect on scroll */
+header.shadow{
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
+    box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
+
+}
+/* Navbar responsiveness */
+.navbar.active {
+    top: 100%; /* Push navbar into view */
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Menu icon in active state */
+#menu-icon.bx-x {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
 
 .logodesign{
     align-items: center;
