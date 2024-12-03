@@ -167,12 +167,17 @@ section{
     font-weight: bold;
     margin-bottom: 8px; /* Space between span and heading */
     color: #8498ea;
+    letter-spacing:2px;
+    text-shadow: 0 0 10px rgb(0, 255, 255,0.5),0 0 20px rgb(0, 255, 255,0.5);
+
 }
 
 /* Styling for the heading span (Movie title) */
 .overlay .heading-span {
     font-size: 2.5rem;
     font-weight: bold;
+    text-shadow: 0 0 10px rgb(12, 15, 15,0.5),0 0 20px rgb(12, 15, 15,0.5);
+
 }
 
 .heading{
