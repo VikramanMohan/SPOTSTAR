@@ -176,6 +176,7 @@ section{
 .overlay .heading-span {
     font-size: 2.5rem;
     font-weight: bold;
+    letter-spacing:7px;
     text-shadow: 0 0 10px rgb(12, 15, 15,0.5),0 0 20px rgb(12, 15, 15,0.5);
 
 }
