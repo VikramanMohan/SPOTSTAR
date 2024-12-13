@@ -341,6 +341,10 @@ button:hover{
 
 /* responsive  */
 @media (max-width: 1080px){
+      .movie-base {
+        flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+        max-width: calc(33.33% - 20px);
+    }
     .home-text{
         padding: 0 100px;
     }
@@ -408,7 +412,39 @@ button:hover{
         grid-template-columns: repeat(auto-fit, minmax(160px,auto));
     }
 }
+
+
+
+/* Mobile (480px - 768px) */
+@media (max-width: 768px) {
+    .movie-base {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        max-width: calc(50% - 20px);
+    }
+
+    h2.heading {
+        font-size: 1.8rem;
+    }
+
+    .box h3 {
+        font-size: 1rem;
+    }
+}
+
+
 @media (max-width: 472px){
+     .movie-base {
+        flex: 1 1 100%; /* 1 item per row */
+        max-width: 100%;
+    }
+
+    h2.heading {
+        font-size: 1.5rem;
+    }
+
+    .box h3 {
+        font-size: 0.9rem;
+    }
     .newsletter form .email{
         width: auto;
     }
@@ -481,44 +517,3 @@ button:hover{
     }
   }
   
-  /* Responsive Design */
-
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-    .movie-base {
-        flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
-        max-width: calc(33.33% - 20px);
-    }
-}
-
-/* Mobile (480px - 768px) */
-@media (max-width: 768px) {
-    .movie-base {
-        flex: 1 1 calc(50% - 20px); /* 2 items per row */
-        max-width: calc(50% - 20px);
-    }
-
-    h2.heading {
-        font-size: 1.8rem;
-    }
-
-    .box h3 {
-        font-size: 1rem;
-    }
-}
-
-/* Small Mobile (less than 480px) */
-@media (max-width: 480px) {
-    .movie-base {
-        flex: 1 1 100%; /* 1 item per row */
-        max-width: 100%;
-    }
-
-    h2.heading {
-        font-size: 1.5rem;
-    }
-
-    .box h3 {
-        font-size: 0.9rem;
-    }
-}
