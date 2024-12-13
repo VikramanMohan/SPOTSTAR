@@ -282,72 +282,214 @@ audio{
     color: var(--bg-color);
 }
 
-/* responsive  */
-@media (max-width: 1080px){
-    .home-text{
-        padding: 0 100px;
+/*Media query max-width 1070px*/
+@media screen and (max-width: 1070px){
+  
+    /*Home Section*/
+    .home .home-container .info{
+        font-size: 0.85rem;
     }
-}
-@media (max-width: 991px){
-    header{
-        padding: 18px 4%;
+    /*About Section*/
+    .about .container .content{
+        display: grid;
+        width: 100%;
+        row-gap: 20px;
     }
-    section{
-        padding: 50px 4%;
+    .about-img img{
+        width: 440px;
+        height: 560px;
     }
-    .home-text{
-        padding: 0 4%;
-    }
-    .home-text h1{
-        font-size: 3rem;
-    }
-}
-@media (max-width: 774px){
-    header{
-        padding: 12px 4%;
-    }
-    #menu-icon{
-        display: initial;
-        color: var(--bg-color);
-    }
-    header.shadow #menu-icon{
-        color: var(--bg-color);
-    }
-    .navbar{
-        position: absolute;
-        top: -570px;
-        left: 0;
-        right: 0;
+    .sug-img{
         display: flex;
+        justify-content: center;
+        width: 1000px;
+        padding: 0px;
+        margin: 0px;
         flex-direction: column;
-        background: var(--bg-color);
-        row-gap: 1.4rem;
-        padding: 20px;
-        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
-        transition: 0.2s all linear;
-        text-align: center;
+    }
+    .sug-img img{
+       width: 300px;
+       height: 400px;
+    }
+    .about-info{
+        min-width: 0;
         width: 100%;
     }
-    .navbar a{
-        color: var(--text-color);
+    .about-info .professional-list{
+        flex-direction: column;
     }
-    .navbar a:hover{
-        color: var(--main-color);
-        border-bottom: 1px solid var(--main-color);
+    .about-info .professional-list .list-item {
+        justify-content: start;
     }
-    .navbar a::after{
-        display: none;
+    .musicplayer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 180px;
+        width: 688px;
+        align-items: center;
+        column-gap: 15px;
     }
-    .navbar.active{
-        top: 100%;
+
+    .control-music .song-title {
+        font-size: 1em;
     }
-    .home-text h1{
-        font-size: 2.4rem;
+
+    .control-music .artist {
+        font-size: 0.8em;
     }
-    .btn{
-        padding: 0.6rem 1.2rem;
+
+    .musicplayer .icons {
+        flex-direction: row;
     }
-    .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    .musicplayer .icons .icon-img {
+        height: 30px;
+        width: 30px;
+        flex-direction: initial;
+        justify-content: space-around;
+        font-size: 15px;
+        padding: 1.2rem;
+    }
+    .musicplayer .icons .icon-img h6{
+        font-size: 0.6em;
+    }
+
+    .suggest {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .suggest  .box-img img {
+        width: 370px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-top: 20px;
     }
 }
+    @media (max-width: 1000px){
+        .home-text{
+            padding: 0 100px;
+        }
+    }
+    }
+    @media (max-width: 991px){
+        header{
+            padding: 18px 4%;
+        }
+        section{
+            padding: 50px 4%;
+        }
+        .home-text{
+            padding: 0 4%;
+        }
+        .home-text h1{
+            font-size: 3rem;
+        }
+        audio{
+            width: 450px;
+            border-radius: 30px;
+            display:flex ;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
+    @media (max-width: 774px){
+        header{
+            padding: 12px 4%;
+        }
+        #menu-icon{
+            display: initial;
+            color: var(--bg-color);
+        }
+        header.shadow #menu-icon{
+            color: var(--bg-color);
+        }
+        .navbar{
+            position: absolute;
+            top: -570px;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-color);
+            row-gap: 1.4rem;
+            padding: 20px;
+            box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+            transition: 0.2s all linear;
+            text-align: center;
+            width: 100%;
+        }
+        .navbar a{
+            color: var(--text-color);
+        }
+        .navbar a:hover{
+            color: var(--main-color);
+            border-bottom: 1px solid var(--main-color);
+        }
+        .navbar a::after{
+            display: none;
+        }
+        .navbar.active{
+            top: 100%;
+        }
+        .home-text h1{
+            font-size: 2.4rem;
+        }
+        .btn{
+            padding: 0.6rem 1.2rem;
+        }
+        .movies-container{
+            grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+        }
+        audio{
+            width: 280px;
+            border-radius: 30px;
+            display:flex ;
+            justify-content: flex-start;
+        }
+        img{
+            height: 120px;
+            border: 20px solid transparent;
+            border-radius: 30px;
+        }
+        .song-title{
+            font-size: 1.2em;
+            font-weight: 300;
+            }
+            .artist-name{
+            font-size: 1.5rem;
+            }
+            .icons{
+                flex-direction: row;
+            }
+            .icons .icon-img i{
+                justify-content: flex-start;
+                font-size: 1.3em;
+            }
+
+    }
+    /*Media query max-width 730px*/
+    @media screen and (max-width: 730px){
+    /*Common styles for all sections*/
+    body{
+        margin: 2rem 0 0 0;
+    }
+
+    /*Home section*/
+    .home .home-container{
+        display: grid;
+    }
+    .home-container .home-img{
+        position: absolute;
+    }
+    .home-container .home-img img {
+        width: 55%;
+        transform: translate(80px, -180px);
+        margin-left:20px ;
+        margin-top: 20px;
+    }
+    .home .home-container .info{
+        font-size: 0.8rem;
+    }
+    }

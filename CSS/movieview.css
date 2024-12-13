@@ -315,6 +315,13 @@ img{
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(160px,auto));
     }
+    
+    iframe{
+        width :655px;
+        height:355px;
+        align-items: center;
+        margin: 10px 125px;
+    }
 }
 @media (max-width: 472px){
     .newsletter form .email{

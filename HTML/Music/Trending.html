@@ -29,39 +29,48 @@
     </header>
    
    
-    <<div class="music-container">
-        <div class="music-header">
-            <div class="img-content">
-                <img  src="../MEDIA/PHOTOS/TRENDING.jpg" alt="LATEST" >
-            </div>
-            <div class="img-details">
-                <h1 class="artist-name">TRENDING HITS</h1>
-                
-                <div class="sub-details">
-                    <p>All Trending Favorite of Yours on Kollywood</p>
-                    <div class="sug-img">
-                        <div class="sub-img">
-                            <a href="./motivational.html"><img src="../MEDIA/PHOTOS/MOTIVATIONAL.jpg"  class="sub-img"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./broken.html"><img src="../MEDIA/PHOTOS/BROKEN.jpg"  class="sub-img"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./dance.html"><img src="../MEDIA/PHOTOS/DANCE.jpg"  class="sub-img"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./Latest.html"><img src="../MEDIA/PHOTOS/LATEST.jpg"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./romance.html"><img src="../MEDIA/PHOTOS/ROMATIC.jpg" ></a>
+    <div class="music-container">
+    <!--Music Header-->
+     <section class="about section " id="about">
+        <div class="container flex-center">
+            <div class="content flex-center">
+                <div class="about-img">
+                    <img  src="../MEDIA/PHOTOS/TRENDING.jpg" alt="TRENDING" >
+                </div>
+                <div class="about-info">
+                    <div class="description">
+                        <h1 class="top-1">TRENDING HITS</h1>
+                        <h5 class="sub-heading">All Trending Favorite of Yours on Kollywood
+                        </h5>
+                        <div class="img-details">
+                            <h1 class="artist-name"></h1>
+                            <div class="sub-details">
+                                <div class="sug-img">
+                                    <div class="sub-img">
+                                        <a href="./motivational.html"><img src="../MEDIA/PHOTOS/MOTIVATIONAL.jpg"  class="sub-img"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./broken.html"><img src="../MEDIA/PHOTOS/BROKEN.jpg"  class="sub-img"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./dance.html"><img src="../MEDIA/PHOTOS/DANCE.jpg"  class="sub-img"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./Latest.html"><img src="../MEDIA/PHOTOS/LATEST.jpg"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./romance.html"><img src="../MEDIA/PHOTOS/ROMATIC.jpg" ></a>
+                                    </div>
+                                </div>           
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
-        <h1 class="heading">Playlist</h1>
+    </section>
 
+        <h1 class="heading">Playlist</h1>
         <div class="song-1">
             <div class="musicplayer">
                 <div class="song-img">
@@ -284,6 +293,7 @@
                     </div>
                 </div>
             </div>
+            </div>
     </div>
      <!-- footer  -->
      <section class="footer">
@@ -301,26 +311,8 @@
    <div class="copyright">
     <p>&#169; Spotstar All Right Reserved</p>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        let header = document.querySelector('header');
+    <script src="../../JAVASCRIPT/movies.js"></script>
 
-window.addEventListener('scroll', () =>{
-    header.classList.toggle('shadow', window.scrollY > 0);
-});
-
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
-window.onscroll = () =>{
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
-}
-
-    </script>
 </div>
 </body>
 </html>

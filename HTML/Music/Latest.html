@@ -30,35 +30,45 @@
    
    
     <div class="music-container">
-        <div class="music-header">
-            <div class="img-content">
-                <img src="../MEDIA/PHOTOS/LATEST.jpg" alt="LATEST" >
-            </div>
-            <div class="img-details">
-                <h1 class="artist-name">LATEST HITS</h1>
-                
-                <div class="sub-details">
-                    <p>Fresh Release on Kollywood 2024</p>
-                    <div class="sug-img">
-                        <div class="sub-img">
-                            <a href="./motivational.html"><img src="../MEDIA/PHOTOS/MOTIVATIONAL.jpg"  class="sub-img"></a>
+    <!--Music Header-->
+    <section class="about section " id="about">
+        <div class="container flex-center">
+            <div class="content flex-center">
+                <div class="about-img">
+                    <img src="../MEDIA/PHOTOS/LATEST.jpg">
+                </div>
+                <div class="about-info">
+                    <div class="description">
+                        <h1 class="top-1">LATEST HITS</h1>
+                        <h5 class="sub-heading">Fresh Release on Kollywood 2024</h5>
+                        <div class="img-details">
+                            <h1 class="artist-name"></h1>
+                            <div class="sub-details">
+                                <div class="sug-img">
+                                    <div class="sub-img">
+                                        <a href="./motivational.html"><img src="../MEDIA/PHOTOS/MOTIVATIONAL.jpg" alt="Motivational"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./broken.html"><img src="../MEDIA/PHOTOS/BROKEN.jpg" alt="Broken"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./dance.html"><img src="../MEDIA/PHOTOS/DANCE.jpg" alt="Dance"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./Trending.html"><img src="../MEDIA/PHOTOS/TRENDING.jpg" alt="Trending"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./romance.html"><img src="../MEDIA/PHOTOS/ROMATIC.jpg" alt="Romantic"></a>
+                                    </div>
+                                </div>                    
+                            </div>
                         </div>
-                        <div class="sub-img">
-                            <a href="./broken.html"><img src="../MEDIA/PHOTOS/BROKEN.jpg"  class="sub-img"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./dance.html"><img src="../MEDIA/PHOTOS/DANCE.jpg"  class="sub-img"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./Trending.html"><img src="../MEDIA/PHOTOS/TRENDING.jpg"  class="sub-img"></a>
-                        </div>
-                        <div class="sub-img">
-                            <a href="./romance.html"><img src="../MEDIA/PHOTOS/ROMATIC.jpg" ></a>
-                        </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+        <div class="song-container">
         <h1 class="heading">Playlist</h1>
         <div class="song-1">
             <div class="musicplayer">
@@ -71,8 +81,7 @@
                     <audio src="../MEDIA/AUDIOS/Full Video_ Whistle Podu _ The Greatest Of All Time _ Thalapathy Vijay _ VP _ U1 _ AGS(MP3_160K).mp3" controls></audio>
                 </div>
                 <div class="icons">
-                    <div class="icon-img"><i class='bx bx-heart'></i>
-                    <h6>Like</h6></div>
+                    <div class="icon-img"><i class='bx bx-heart'></i><h6>Like</h6></div>
                     <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                     <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
                 </div>
@@ -86,13 +95,13 @@
                 <div class="control-music">
                     <h3 class="song-title">Manasilaayo from Vettaiyan</h3>
                     <h6 class="artist"><marquee behavior="" direction="left">Anirudh Ravichandran, Malaysia Vasudhevan,Deepthi suresh</marquee></h6>
-                    <audio src="../MEDIA/AUDIOS/Vettaiyan - Manasilaayo Lyric _ Rajinikanth _ T.J. Gnanavel _ Anirudh _ Manju Warrier _ Subaskaran(MP3_160K).mp3" controls></audio>                </div>
-                    <div class="icons">
-                        <div class="icon-img"><i class='bx bx-heart'></i>
-                        <h6>Like</h6></div>
-                        <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
-                        <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
-                    </div>
+                    <audio src="../MEDIA/AUDIOS/Vettaiyan - Manasilaayo Lyric _ Rajinikanth _ T.J. Gnanavel _ Anirudh _ Manju Warrier _ Subaskaran(MP3_160K).mp3" controls></audio>
+                </div>
+                <div class="icons">
+                    <div class="icon-img"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                    <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                    <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
+                </div>
             </div>
         </div>
         <div class="song-3">
@@ -285,7 +294,8 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </div>
     </div>
      <!-- footer  -->
      <section class="footer">
@@ -303,26 +313,7 @@
    <div class="copyright">
     <p>&#169; Spotstar All Right Reserved</p>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        let header = document.querySelector('header');
-
-window.addEventListener('scroll', () =>{
-    header.classList.toggle('shadow', window.scrollY > 0);
-});
-
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-}
-window.onscroll = () =>{
-    menu.classList.remove('bx-x');
-    navbar.classList.remove('active');
-}
-
-    </script>
+<script src="../../JAVASCRIPT/movies.js"></script>
 </div>
 </body>
 </html>
