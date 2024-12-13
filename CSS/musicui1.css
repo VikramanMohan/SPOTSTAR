@@ -682,14 +682,5 @@ audio {
         font-size: 1.5rem;
     }
 
-    .icons {
-        flex-direction: row;
-    }
-
-    .icons .icon-img i {
-        justify-content: flex-start;
-        font-size: 1.3em;
-    }
-
 }
 
