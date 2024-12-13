@@ -217,7 +217,7 @@ h2{
         color: var(--bg-color);
     }
     header.shadow #menu-icon{
-        color: var(--text-color);
+        color: var(--bg-color);
     }
     .navbar{
         position: absolute;
