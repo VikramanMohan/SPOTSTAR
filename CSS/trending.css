@@ -374,27 +374,29 @@ button:hover{
     header.shadow #menu-icon{
         color: var(--bg-color);
     }
-    .navbar{
+    .navbar {
         position: absolute;
         top: -570px;
         left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
-        background: var(--bg-color);
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
         row-gap: 1.4rem;
         padding: 20px;
-        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
         transition: 0.2s all linear;
         text-align: center;
         width: 100%;
     }
-    .navbar a{
-        color: var(--text-color);
+
+    .navbar a {
+        color: var(--bg-color);
     }
-    .navbar a:hover{
-        color: var(--text-color);
-        border-bottom: 1px solid var(--text-color);
+
+    .navbar a:hover {
+        color: var(--bg-color);
+        border-bottom: 1px solid var(--bg-color);
     }
     .navbar a::after{
         display: none;
@@ -409,14 +411,8 @@ button:hover{
         padding: 0.6rem 1.2rem;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
     }
-}
-
-
-
-/* Mobile (480px - 768px) */
-@media (max-width: 768px) {
     .movie-base {
         flex: 1 1 calc(50% - 20px); /* 2 items per row */
         max-width: calc(50% - 20px);
@@ -429,7 +425,29 @@ button:hover{
     .box h3 {
         font-size: 1rem;
     }
+    .overlay span {
+        font-size: 1em;
+        letter-spacing:0.71px;
+        
+    
+    }
+    
+    .overlay .heading-span {
+        font-size: 2em;
+        letter-spacing:4px;
+        margin-top: 0.7px;
+    
+    }
+    .box .box-video{
+        width: 480px;
+        height: 250px;
+        cursor: pointer;
+    }
 }
+
+
+
+
 
 
 @media (max-width: 472px){
@@ -473,7 +491,9 @@ button:hover{
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
-}
+
+
+
   .line-1 {
     animation: infinite playing 1s ease-in-out;
     animation-delay: 0.2s;
@@ -498,7 +518,7 @@ button:hover{
     animation: infinite playing 1s ease-in-out;
     animation-delay: 0.4s;
   }
-  
+
   @keyframes playing {
     0% {
       transform: scaleY(0.1);
@@ -516,4 +536,4 @@ button:hover{
       transform: scaleY(0.1);
     }
   }
-  
+}
