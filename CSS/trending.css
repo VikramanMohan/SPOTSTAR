@@ -192,17 +192,18 @@ section{
 .movies-container{
     max-width: 1500px;
     align-items: center;
-    margin-left: 20px;
+    margin-left: auto;
     margin-right: auto;   
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
     gap: 1rem;
     margin-top: 1.8rem;
     margin-bottom: 2.9rem;
+    justify-content: center;
 }
 .box .box-video{
-    width: 340px;
-    height: 190px;
+    width: 360px;
+    height: 200px;
     cursor: pointer;
 }
 .box .box-video video{
@@ -220,6 +221,8 @@ section{
 
 
 .box h3{
+    height: 50px;
+    width: 300px;
     margin-top: 20px;
     font-size: 1rem;
     font-weight: 600;
@@ -264,15 +267,21 @@ section{
     margin-left: 20px;
     margin-right: auto;   
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
     gap: 1rem;
     margin-top: 1.8rem;
     margin-bottom: 2.9rem;
   }
+  .music-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
   .musicbox{
     display: flex;
     align-items: center;
-    
+    justify-content: center;
 
   }
   .musicbox img{
@@ -439,8 +448,8 @@ button:hover{
     
     }
     .box .box-video{
-        width: 480px;
-        height: 250px;
+        width: 450px;
+        height: 220px;
         cursor: pointer;
     }
 }
