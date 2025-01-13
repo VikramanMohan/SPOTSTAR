@@ -163,9 +163,8 @@ section{
 
 /* Styling for the span (Upcoming Movie) */
 .overlay span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 2px; /* Space between span and heading */
     color: #8498ea;
     letter-spacing:2px;
     text-shadow: 0 0 10px rgb(0, 255, 255,0.5),0 0 20px rgb(0, 255, 255,0.5);
@@ -181,14 +180,17 @@ section{
 
 }
 
+
 .heading{
     margin-top: 20px;
     max-width: 1500px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     font-size: 2.2rem;
     font-weight: 600;
 }
+/* Movie Section */
+
 .movies-container{
     max-width: 1500px;
     align-items: center;
@@ -228,7 +230,7 @@ section{
     font-weight: 600;
 }
 
-
+/* Music Card */
 .card {
     position: relative;
     width: 260px;
@@ -342,6 +344,8 @@ button:hover{
     
 }
 
+/* copyright */
+
 .copyright{
     padding: 20px;
     text-align: center;
@@ -438,7 +442,6 @@ button:hover{
         font-size: 1em;
         letter-spacing:0.71px;
         
-    
     }
     
     .overlay .heading-span {
@@ -501,48 +504,46 @@ button:hover{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
 
+}
+/*Animation Section*/
 
+.line-1,
+.line-2,
+.line-3,
+.line-4,
+.line-5 {
+    display: inline-block; /* Ensure elements are inline */
+    transform-origin: center bottom; /* Define scale origin */
+    animation: playing 1s ease-in-out infinite; /* Correct shorthand syntax */
+}
 
-  .line-1 {
-    animation: infinite playing 1s ease-in-out;
+.line-1 {
     animation-delay: 0.2s;
-  }
-  
-  .line-2 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-2 {
     animation-delay: 0.5s;
-  }
-  
-  .line-3 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-3 {
     animation-delay: 0.6s;
-  }
-  
-  .line-4 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-4 {
     animation-delay: 0s;
-  }
-  
-  .line-5 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-5 {
     animation-delay: 0.4s;
-  }
+}
 
-  @keyframes playing {
+@keyframes playing {
     0% {
-      transform: scaleY(0.1);
+        transform: scaleY(0.1);
     }
-  
     33% {
-      transform: scaleY(0.6);
+        transform: scaleY(0.6);
     }
-  
     66% {
-      transform: scaleY(0.9);
+        transform: scaleY(0.9);
     }
-  
     100% {
-      transform: scaleY(0.1);
+        transform: scaleY(0.1);
     }
-  }
 }
