@@ -99,3 +99,7 @@ function SignUpValidation() {
         document.getElementById("error").innerHTML = errorMessage;
     }
 }
+
+function alertOf(){
+    alert('Login First')
+}
