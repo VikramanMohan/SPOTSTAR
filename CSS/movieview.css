@@ -139,22 +139,24 @@ button:hover{
 }
 
 .img-details{
-padding: 30px 0px 0px 10px;
+padding: 30px;
 text-align: justify;
 }
 
 .cast{
-    padding: 90px 50px 0px 30px;
+    padding: 45px 50px 0px 30px;
 
 }
 
 .music-header{
 display: flex;
 justify-content: center;
+flex-direction: row;
 }
 .artist-name{
 padding: 10px 0px;
 text-transform: uppercase;
+font-size: 3.2rem;
 }
 img{
     height: 150px;
@@ -213,6 +215,13 @@ img{
     font-size: 1rem;
 }
 
+iframe{
+    width :1260px;
+    height:580px;
+    padding: 20px;
+    margin-left: 130px;
+}
+
 /* footer  */
 .footer{
     margin-top: 50px;
@@ -265,6 +274,11 @@ img{
     }
     .home-text h1{
         font-size: 3rem;
+    }
+
+    iframe{
+        padding: 10px;
+        margin: 0px;
     }
 }
 @media (max-width: 774px){
@@ -319,11 +333,22 @@ img{
     }
     
     iframe{
-        width :655px;
+        width :625px;
         height:355px;
-        align-items: center;
-        margin: 10px 125px;
+        padding: 10px;
+        margin: 0px;
     }
+    .music-header{
+
+        flex-direction: column;
+        }
+        .img-content{
+            justify-content: center;
+            }
+            .img-content .main-img{
+                height: 450px;
+                margin-bottom: 10px;
+                }
 }
 @media (max-width: 472px){
     .newsletter form .email{
@@ -354,4 +379,15 @@ img{
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
+    .music-header{
+
+        flex-direction: column;
+        }
+
+        iframe{
+            width :425px;
+            height:225px;
+            padding: 10px;
+            margin: 0px;
+        }
 }

@@ -103,6 +103,7 @@ header.shadow .logo{
 .music-container{
     margin-top: 100px;
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
 }
 .img-content{
@@ -116,14 +117,16 @@ margin-bottom: 10px;
 }
 
 .img-details{
-padding: 30px 60px 0px 10px;
-text-align: justify;
+    padding: 20px;
+    text-align: left;
 }
 .music-header{
 display: flex;
 justify-content: center;
+flex-direction: row;
 }
 .artist-name{
+font-size: 3.2rem;
 padding: 10px 0px;
 text-transform: uppercase;
 
@@ -292,6 +295,17 @@ img{
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(160px,auto));
     }
+    .music-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-details{
+        font-size: 1rem;
+    }
+    .img-content .main-img{
+        height: 400px;
+    }
 }
 @media (max-width: 472px){
     .newsletter form .email{
@@ -321,5 +335,13 @@ img{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+    .music-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-details{
+        font-size: x-small;
     }
 }

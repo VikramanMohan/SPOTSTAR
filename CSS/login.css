@@ -17,18 +17,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
-
+    height: 110vh;
 }
 img{
     position: relative  ;
     top: 15px;
-    left: 80px;
+    left: 0;
+    justify-content: center ;
     user-select: none;
     align-items: center;
     display: flex;
     column-gap: 0.5rem;
-    height: 70px;
+    height: 55px;
 }
 .nav{
     position: fixed;
@@ -103,8 +103,7 @@ img{
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    text-align: left;
 }
 .top h1{
     color: #fff;
@@ -269,26 +268,55 @@ header{
     .nav-menu-btn i:hover{
         background: rgba(255, 255, 255, 0.15);
     }
+
+    .top h1{
+        font-size: 1.6rem;
+        text-align: center;
+
+    }
+    .top h2{
+        font-size: 0.4rem;
+        text-align: center;
+    
+    }
+    .top .heading-3{
+        font-size: 1.7rem;
+    
+    }
+
     .welcome-index{
-        position: relative;
-        right: 0;
-        bottom: 0;
-        left: 100px;
-        align-items: center;
+        width: 350px;
+        height: 200px;
+        text-align: left;
+        align-items: flex-start;
+        margin: 150px 0px 40px 0px;
+    }
+    .wrapper{
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+    }
+ 
+    .login-container{
+        left:24px;
     }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 472px) {
     .wrapper{
-        min-height: 100vh;
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
     }
     .main-content{
         display: flex;
         flex-direction: column;
     }
     .form-box{
-        
         width: 100%;
         height: 500px;
+    }
+    .login-container{
+        left:24px;
     }
     .register-container, .login-container{
         width: 100%;
@@ -298,4 +326,6 @@ header{
         flex-direction: column;
         gap: 0;
     }
+    
+        
 }
