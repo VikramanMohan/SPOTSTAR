@@ -361,6 +361,35 @@ button:hover{
     .home-text{
         padding: 0 100px;
     }
+    .music-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+    .card {
+        width: 220px;
+        height: 300px;
+    }
+    .musicbox img {
+        height: 160px;
+        width: 160px;
+        bottom: 30px;
+    }
+    .title-1 {
+        font-size: 20px;
+        margin: 180px 10px 10px 0px;
+    }
+    .title-2 {
+        font-size: 10px;
+        margin: -15px 10px 10px 0px;
+    }
+    button {
+        height: 35px;
+        width: 35px;
+        bottom: 15px;
+        left: 170px;
+    }
+
+
 }
 @media (max-width: 991px){
     header{
@@ -375,6 +404,17 @@ button:hover{
     .home-text h1{
         font-size: 3rem;
     }
+    .musicbox img {
+        height: 180px;
+        width: 180px;
+        position: relative;
+        left: 80px;
+        bottom: 130px;
+    }
+    .playing{
+        display: none;
+    }
+
 }
 @media (max-width: 774px){
     header{
@@ -430,6 +470,32 @@ button:hover{
         flex: 1 1 calc(50% - 20px); /* 2 items per row */
         max-width: calc(50% - 20px);
     }
+    .music-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .card {
+        width: 200px;
+        height: 280px;
+    }
+    .musicbox img {
+        height: 180px;
+        width: 180px;
+        position: relative;
+        left: 72px;
+        bottom: 130px;
+    }
+    .title-1 {
+        font-size: 18px;
+    }
+    .title-2 {
+        font-size: 9px;
+    }
+    button {
+        height: 30px;
+        width: 30px;
+        bottom: 10px;
+        left: 150px;
+    }
 
     h2.heading {
         font-size: 1.8rem;
@@ -467,7 +533,10 @@ button:hover{
         flex: 1 1 100%; /* 1 item per row */
         max-width: 100%;
     }
-
+    .logodesign{
+        
+        height: 50px;
+    }
     h2.heading {
         font-size: 1.5rem;
     }
@@ -503,7 +572,32 @@ button:hover{
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
-
+    .music-box .box{
+        width: 200px;
+    }
+    .music-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    .card {
+        width: 180px;
+        height: 250px;
+    }
+    .musicbox img {
+        height: 150px;
+        width: 150px;
+    }
+    .title-1 {
+        font-size: 16px;
+    }
+    .title-2 {
+        font-size: 8px;
+    }
+    button {
+        height: 25px;
+        width: 25px;
+        bottom: 5px;
+        left: 130px;
+    }
 }
 /*Animation Section*/
 

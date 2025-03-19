@@ -173,14 +173,14 @@ h2{
 }
 .swiper-container {
     width: 100%;
-    max-width: 800px; /* Adjust width as needed */
+    max-width: 800px; 
     overflow: hidden;
   }
   
   .swiper-slide .box {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounds the corners */
+    border-radius: 8px; 
   }
 .copyright{
     padding-top: 20px;
@@ -218,6 +218,65 @@ h2{
     }
     header.shadow #menu-icon{
         color: var(--bg-color);
+    }
+    .navbar  {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
+        transition: 0.2s all linear;
+        text-align: center;
+        width: 100%;
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
+
+    }
+
+    .navbar a {
+        color: var(--main-color);
+        
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        border-bottom: 1px solid var(--text-color);
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+    
+}
+
+@media (max-width: 474px){
+    header{
+        padding: 8px 2%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--bg-color);
+    }
+    header.shadow #menu-icon{
+        color: var(--bg-color);
+    }
+    .logodesign{
+        
+        height: 50px;
     }
     .navbar {
         position: absolute;
@@ -259,4 +318,22 @@ h2{
         grid-template-columns: repeat(auto-fit, minmax(320px,auto));
     }
     
+    .box .box-img{
+        width:190px;
+        height: 100px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .coming-container{
+       
+        gap: 5rem;
+       
+        
+    }
+    .movies option{
+        font-size: 0.5rem;
+    }
+    h2{
+        margin-left: 0px;
+    }
 }

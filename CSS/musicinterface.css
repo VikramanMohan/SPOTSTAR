@@ -300,4 +300,30 @@ header.shadow .logo{
     .music-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
+    .logodesign{
+        
+        height: 50px;
+    }
+    .box .box-img{
+        width: 150px;
+
+    }
+    .box .box-img-1{
+        width:150px;
+        height: 200px;
+      
+    }
+    .box .box-img-2{
+        width:150px;
+       
+
+    }
+    .box .box-img-2 img{
+        border-radius: 8px;
+
+    }
+    .box .box-img-1 img{
+
+        border-radius: 8px;
+    }
 }

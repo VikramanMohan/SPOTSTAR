@@ -315,6 +315,10 @@ section{
     }
 }
 @media (max-width: 472px){
+    .logodesign{
+        
+        height: 50px;
+    }
     .newsletter form .email{
         width: auto;
     }
@@ -342,5 +346,10 @@ section{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    }
+    .box .box-img{
+        width: 150px;
+        height: 200px;
+        cursor: pointer;
     }
 }

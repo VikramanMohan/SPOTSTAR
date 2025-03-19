@@ -349,10 +349,20 @@ iframe{
                 height: 450px;
                 margin-bottom: 10px;
                 }
+                .box .box-img{
+                    width: 260px;
+                    height: 350px;
+                    
+                
+                }
 }
 @media (max-width: 472px){
     .newsletter form .email{
         width: auto;
+    }
+    .logodesign{
+        
+        height: 50px;
     }
     .footer{
         flex-direction: column;
@@ -389,5 +399,11 @@ iframe{
             height:225px;
             padding: 10px;
             margin: 0px;
+        }
+        .box .box-img{
+            width: 210px;
+            height: 320px;
+            
+        
         }
 }
