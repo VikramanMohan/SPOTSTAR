@@ -189,9 +189,24 @@ h2{
 }
 
 /* responsive  */
+@media (max-width: 1400px){
+    .home-text{
+        padding: 0 100px;
+    }
+    .box .box-img{
+        width:220px;
+        height: 120px;
+
+    }
+}
 @media (max-width: 1080px){
     .home-text{
         padding: 0 100px;
+    }
+    .box .box-img{
+        width:220px;
+        height: 120px;
+
     }
 }
 @media (max-width: 991px){
@@ -206,6 +221,11 @@ h2{
     }
     .home-text h1{
         font-size: 3rem;
+    }
+    .box .box-img{
+        width:200px;
+        height: 100px;
+
     }
 }
 @media (max-width: 774px){
@@ -259,6 +279,11 @@ h2{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+    .box .box-img{
+        width:200px;
+        height: 100px;
+
     }
     
 }
