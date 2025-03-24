@@ -232,6 +232,69 @@ header{
 .two label a:hover{
     text-decoration: underline;
 }
+* Main Container */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10vh auto;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.heading1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(243, 243, 243, 0.5);
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.paragraph {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(2, 0, 0, 0.5);
+
+}
+.sub-paragraph {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Button */
+.btns .submit {
+   
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btns .submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
 @media only screen and (max-width: 786px){
     .nav-button{
         display: none;
@@ -305,7 +368,19 @@ header{
         width: 350px;
     }
     
- 
+    .text-container{
+        margin-top: 200px;
+    }
+    .heading1 {
+        font-size: 2.3rem;
+    }
+    .paragraph {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+    .sub-paragraph {
+        font-size: 0.9rem;
+    }
 }
 @media only screen and (max-width: 472px) {
     .wrapper{
@@ -337,6 +412,16 @@ header{
         flex-direction: column;
         gap: 0;
     }
+    .heading1 {
+        font-size: 1.7rem;
+    }
     
-        
+    .paragraph {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+    .sub-paragraph {
+        font-size: 0.9rem;
+    }
+
 }

@@ -123,6 +123,7 @@ header.shadow{
 }
 h2{
     margin-left: 30px;
+    
 }
 
   .movie-container
@@ -320,12 +321,12 @@ h2{
     }
 
     .navbar a {
-        color: var(--bg-color);
+        color: var(--main-color);
     }
 
     .navbar a:hover {
-        color: var(--bg-color);
-        border-bottom: 1px solid var(--bg-color);
+        color: var(--text-color);
+        border-bottom: 1px solid var(--text-color);
     }
     .navbar a::after{
         display: none;
@@ -344,21 +345,29 @@ h2{
     }
     
     .box .box-img{
-        width:190px;
-        height: 100px;
+        width:160px;
+        height: 90px;
         cursor: pointer;
         margin-top: 20px;
     }
     .coming-container{
-       
         gap: 5rem;
-       
-        
+    }
+    .coming{
+        padding: 10px;
+    }
+    .coming h2{
+        margin-left: 10px;
+
     }
     .movies option{
         font-size: 0.5rem;
     }
-    h2{
+    .movies h2{
+        font-size: 14px;
         margin-left: 0px;
+    }
+    .copyright p{
+        font-size: x-small;
     }
 }

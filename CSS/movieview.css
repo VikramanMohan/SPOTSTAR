@@ -361,8 +361,7 @@ iframe{
         width: auto;
     }
     .logodesign{
-        
-        height: 50px;
+        height: 80px;
     }
     .footer{
         flex-direction: column;
@@ -394,8 +393,12 @@ iframe{
         flex-direction: column;
         }
 
+        .cast{
+            padding: 20px 0px 0px 10px;
+        }
+
         iframe{
-            width :425px;
+            width :405px;
             height:225px;
             padding: 10px;
             margin: 0px;

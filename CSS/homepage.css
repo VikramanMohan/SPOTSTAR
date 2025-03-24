@@ -134,18 +134,8 @@ header.shadow .logo{
     justify-content: center;
 
 }
-.top  .heading-4 {
-    font-weight: 500;
-    color: #fff;
-    margin-left: 5px;
-    text-align: center;
-    padding: 1px 20px 40px 0;
-    letter-spacing: 4px;
-    text-shadow: 0 0 10px rgba(3, 14, 14, 0.5),0 0 20px rgba(11, 20, 20, 0.5);
 
-
-}
-h1{
+.title{
     color: #fff;
     font-size: 40px;
     text-align: center;
@@ -191,6 +181,15 @@ h1{
     text-align: center;
 }
 
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    letter-spacing: 5px;
+
+}
 
 /* responsive  */
 @media (max-width: 1080px){
@@ -320,25 +319,45 @@ h1{
         padding: 0.6rem 1.2rem;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+        grid-template-columns: repeat(auto-fit, minmax(140px,auto));
     }
     .box .box-img{
-        width: 190px;
+        width: 150px;
         padding: 10px;
     }
     .top span{
         color: #fff;
         font-size: 0.7rem;
+        text-align: center;
 
     
     }
-    .top  .heading-4 {
-        font-size: x-small;
-    
+
+    .second-container{
+
+        display: flex;
+        justify-content: center;
+       
+    }
+    .top  .sub-heading{
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 2px;
+
     
     }
-    h1{
-       font-size: 20px;
+
+    .top .sub-title{
+        font-size: 20px;
+    }
+    .title{
+        
+        font-size: 30px;
+        text-align: center;
+        padding: 0px;
+        letter-spacing: 2px;
+
     
     }
+    
 }

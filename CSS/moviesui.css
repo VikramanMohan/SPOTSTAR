@@ -316,7 +316,6 @@ section{
 }
 @media (max-width: 472px){
     .logodesign{
-        
         height: 50px;
     }
     .newsletter form .email{
@@ -346,6 +345,7 @@ section{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+        margin: 10px;
     }
     .box .box-img{
         width: 150px;
