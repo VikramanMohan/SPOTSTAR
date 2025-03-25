@@ -654,9 +654,25 @@ audio{
     .home .home-container .info{
         font-size: 0.8rem;
     }
+   
+    .img-content .main-img{
+        width: 280px;
+        height: 280px;
+    }
     .musicplayer {
         padding: 10px;
 
+    }
+    .music-header{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .img-details{
+        padding: 5px;
+    }
+    .sub-details{
+        font-size: 0.7rem;
     }
     
     .artist-name{
@@ -693,7 +709,7 @@ audio{
         width: 40px;
     }
     audio{
-        width: 360px;
+        width:100%;
     }
     .suggest {
         grid-template-columns:1fr;
@@ -701,7 +717,7 @@ audio{
         justify-items: center;
     }
     .suggest  .box-img img {
-        width: 300px;
+        width: 260px;
         height: 100%;
         object-fit: cover;
         border-radius: 30px;

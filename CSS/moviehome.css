@@ -228,6 +228,13 @@ h2{
         height: 100px;
 
     }
+    .coming{
+        padding: 10px;
+    }
+    .coming h2{
+        margin-left: 10px;
+
+    }
 }
 @media (max-width: 774px){
     header{
@@ -284,6 +291,13 @@ h2{
     .box .box-img{
         width:200px;
         height: 100px;
+
+    }
+    .coming{
+        padding: 10px;
+    }
+    .coming h2{
+        margin-left: 10px;
 
     }
     

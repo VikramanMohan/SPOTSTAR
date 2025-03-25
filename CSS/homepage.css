@@ -118,8 +118,6 @@ header.shadow .logo{
 }
 .container{
     margin-top: 60px;
-    position: absolute;
-    left: 4px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -135,7 +133,7 @@ header.shadow .logo{
 
 }
 
-.title{
+.heading .title{
     color: #fff;
     font-size: 40px;
     text-align: center;
@@ -193,22 +191,36 @@ header.shadow .logo{
 
 /* responsive  */
 @media (max-width: 1080px){
-    .home-text{
-        padding: 0 100px;
+    .home-text {
+        padding: 0 50px;
+    }
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .box .box-img {
+        width: 220px;
+        padding: 15px;
+    }
+    .home-text h1 {
+        font-size: 2.8rem;
     }
 }
 @media (max-width: 991px){
-    header{
-        padding: 18px 4%;
+    header {
+        padding: 15px 4%;
     }
-    section{
-        padding: 50px 3%;
-    }
-    .home-text{
+    .home-text {
         padding: 0 4%;
     }
-    .home-text h1{
-        font-size: 3rem;
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .box .box-img {
+        width: 200px;
+        padding: 10px;
     }
 }
 @media (max-width: 774px){
@@ -216,7 +228,7 @@ header.shadow .logo{
         padding: 12px 4%;
     }
     #menu-icon{
-        display: initial;
+        display: block;
         color: var(--bg-color);
     }
     header.shadow #menu-icon{
@@ -318,25 +330,33 @@ header.shadow .logo{
     .btn{
         padding: 0.6rem 1.2rem;
     }
-    .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(140px,auto));
+    .movies-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
-    .box .box-img{
+    .box .box-img {
         width: 150px;
-        padding: 10px;
+        padding: 8px;
     }
-    .top span{
-        color: #fff;
-        font-size: 0.7rem;
+    .heading .title {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+    .choice{
+        margin: 0;
+    }
+    .top span {
+        font-size: 0.8rem;
         text-align: center;
     }
-   
-    .second-container{
+    .second-container {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
     }
+}
     .top  .sub-heading{
         font-size: 10px;
         text-align: center;

@@ -921,19 +921,14 @@ audio {
         width: 40px;
     }
     audio{
-        width: 360px;
+        width: 100%;
     }
-    .suggest .box .box-img img{
-        width: 290px;
-    }
+    
     .sub-details{
         justify-content: start;
     }
     .sug-img {
-
-        width: 300px;
-
-    
+        width: 100%;
     }
     .suggest {
         grid-template-columns:1fr;
@@ -941,7 +936,7 @@ audio {
         justify-items: center;
     }
     .suggest  .box-img img {
-        width: 300px;
+        width: 260px;
         height: 100%;
         object-fit: cover;
         border-radius: 30px;
