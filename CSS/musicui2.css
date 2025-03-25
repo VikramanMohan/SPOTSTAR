@@ -189,7 +189,7 @@ header.shadow{
     height: 400px;
 }
 .img-details{
-    padding: 40px 70px 3px 0px;
+    padding: 5px 70px 3px 0px;
     text-align: justify;
     }
     .music-container{
@@ -502,7 +502,7 @@ audio{
         header.shadow #menu-icon{
             color: var(--bg-color);
         }
-        .navbar{
+        .navbar {
             position: absolute;
             top: -570px;
             left: 0;
@@ -512,15 +512,17 @@ audio{
             background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
             row-gap: 1.4rem;
             padding: 20px;
-            box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+            box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
             transition: 0.2s all linear;
             text-align: center;
             width: 100%;
         }
-        .navbar a{
+    
+        .navbar a {
             color: var(--bg-color);
         }
-        .navbar a:hover{
+    
+        .navbar a:hover {
             color: var(--bg-color);
             border-bottom: 1px solid var(--bg-color);
         }
@@ -657,7 +659,15 @@ audio{
 
     }
     
-
+    .artist-name{
+        font-size: 30px;
+    }
+    .description .sub-heading{
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 20px;
+    }
     .song-img img {
         height: 160px;
     }

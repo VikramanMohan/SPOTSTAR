@@ -144,7 +144,7 @@ text-align: justify;
 }
 
 .cast{
-    padding: 45px 50px 0px 30px;
+    padding: 120px 50px 0px 30px;
 
 }
 
@@ -389,14 +389,17 @@ iframe{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
     }
     .music-header{
-
         flex-direction: column;
         }
-
+        .artist-name{
+            font-size: 22px;
+        }
         .cast{
             padding: 20px 0px 0px 10px;
         }
-
+        .heading{
+            margin-left: 15px;
+        }
         iframe{
             width :405px;
             height:225px;

@@ -529,10 +529,13 @@ section{
         
         height: 50px;
     }
-    h2.heading {
-        font-size: 1.5rem;
+    .heading {
+        font-size: 1.2rem;
+        padding: 0px;
     }
-
+    .overlay .heading-span{
+        font-size: 1rem;
+    }
     .box h3 {
         font-size: 0.9rem;
     }
@@ -571,6 +574,7 @@ section{
         height: 160px;
     }
     .music-container {
+        margin: 0px;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 

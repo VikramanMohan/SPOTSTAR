@@ -689,29 +689,9 @@ audio {
 }
 
 @media (max-width: 774px) {
-    .navbar {
-        flex-direction: column;
-        row-gap: 1rem;
-        display: none; /* Hide menu initially */
-        position: absolute;
-        background: var(--bg-color);
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .navbar.active {
-        display: flex;
-    }
-
-    #menu-icon {
-        display: block;
-        color: var(--bg-color);
-    }
+    
     .home-text h1 {
-        font-size: 2.5rem; /* Reduce heading size */
+        font-size: 2.5rem; 
     }
 
     .musicplayer {
@@ -732,12 +712,38 @@ audio {
     }
 
     audio {
-        width: 100%; /* Make the audio player responsive */
+        width: 100%; 
     }
 
     .about-img img, .sug-img img {
         max-width: 100%;
         height: auto;
+    }
+
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--bg-color);
+    }
+    header.shadow #menu-icon{
+        color: var(--bg-color);
+    }
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
+        transition: 0.2s all linear;
+        text-align: center;
+        width: 100%;
     }
 
     .navbar a {
@@ -748,20 +754,16 @@ audio {
         color: var(--bg-color);
         border-bottom: 1px solid var(--bg-color);
     }
-
-    .navbar a::after {
+    .navbar a::after{
         display: none;
     }
-
-    .navbar.active {
+    .navbar.active{
         top: 100%;
     }
-
-    .home-text h1 {
+    .home-text h1{
         font-size: 2.4rem;
     }
-
-    .btn {
+    .btn{
         padding: 0.6rem 1.2rem;
     }
 
@@ -889,7 +891,15 @@ audio {
     .song-img img {
         height: 160px;
     }
-
+    .description .top-1{
+        font-size: 30px;
+    }
+    .description .sub-heading{
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 20px;
+    }
     .control-music .song-title {
         font-size: 1rem;
     }

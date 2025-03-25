@@ -125,8 +125,15 @@ display: flex;
 justify-content: center;
 flex-direction: row;
 }
+.sub-details{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+    color: #89cced;
+
+}
 .artist-name{
-font-size: 3.2rem;
+font-size: 3rem;
 padding: 10px 0px;
 text-transform: uppercase;
 
@@ -351,12 +358,21 @@ img{
         justify-content: center;
         align-items: center;
     }
+    .heading{
+        margin-left: 14px;
+    }
+    .img-content .main-img{
+        margin-bottom: 0px;
+    }
+    .artist-name{
+        font-size: 25px;
+    }
     .img-details{
         font-size: x-small;
     }
     .box .box-img{
         width: 210px;
-        height: 320px;
+        height: 295px;
         
     
     }
