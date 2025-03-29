@@ -75,13 +75,13 @@
             </div>
 
             <!------------------- registration form -------------------------->
-            <div class="register-container" id="register">
+            <form class="register-container" id="register" onsubmit="SignUpValidation(event)">
                 <div class="top">
                     <span>Have an account? <a href="#" onclick="login()">Login</a></span>
                     <header>Sign Up</header>
                 </div>
                 
-                <div class="two-forms">
+                <div class="two-forms" >
                     <div class="input-box">
                         <input type="text" class="input-field" placeholder="Firstname" id="first" name="firstname" required aria-label="Firstname">
                         <i class="bx bx-user"></i>
@@ -100,17 +100,16 @@
                     <i class="bx bx-phone"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Set Password" id="pass" name="password" required minlength="6" aria-label="Password">
+                    <input type="password" class="input-field" placeholder="Set Password" id="register-pass" required minlength="6">
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Confirm Password" id="confirm" name="confirmPassword" required aria-label="Confirm Password">
+                    <input type="password" class="input-field" placeholder="Confirm Password" id="register-confirm" required>
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <button class="submit" type="submit" onsubmit="SignUpValidation()">Register</button>
+                    <button class="submit" type="submit" >Register</button>
                 </div>
-                <div id="register-error" style="color: red; margin-top: 10px;"></div>
                 <div class="two-col">
                     <div class="one">
                         <input type="checkbox" id="register-check">
@@ -120,8 +119,8 @@
                         <label><a href="#">Terms & Conditions</a></label>
                     </div>
                 </div>
-            </div>
-            
+            </form>
+            <div id="error" style="color: red; margin-top: 10px;"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -62,44 +62,30 @@ function login() {
     }
 }
 
-function SignUpValidation() {
-    // Phone Number Validation
-    const phone = document.getElementById("phone").value;
-    const phoneFlag = (phone >= 6000000000 && phone <= 9999999999);
+function SignUpValidation(event) {
+    event.preventDefault();
 
-    // Email Validation
-    const email = document.getElementById("mail").value;
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("mail").value.trim();
+    const password = document.getElementById("register-pass").value.trim();
+    const confirmPassword = document.getElementById("register-confirm").value.trim();
+
+    const phoneFlag = /^[6-9]\d{9}$/.test(phone);
     const emailFlag = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email);
-
-    // Password Validation
-    const password = document.getElementById("pass").value;
     const passwordFlag = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/.test(password);
+    const confirmFlag = password === confirmPassword;
 
-    // Confirm Password Validation
-    const reEnteredPassword = document.getElementById("confirm").value;
-    const confirmFlag = (password === reEnteredPassword);
+    let errorMessage = "";
+    if (!phoneFlag) errorMessage += "• Phone number must be 10 digits starting with 6-9.<br>";
+    if (!emailFlag) errorMessage += "• Invalid email format.<br>";
+    if (!passwordFlag) errorMessage += "• Password must be 8-16 characters with uppercase, lowercase, number, and special character.<br>";
+    if (!confirmFlag) errorMessage += "• Passwords do not match.<br>";
 
-    // Final Validation
-    if (phoneFlag && emailFlag && passwordFlag && confirmFlag) {
+    if (errorMessage === "") {
         window.location.href = "./HTML/OtpVerify.html";
+        console.log(SignUpValidation());
     } else {
-        let errorMessage = "Invalid Details:";
-        if (!phoneFlag) {
-            errorMessage += " Phone number is invalid.";
-        }
-        if (!emailFlag) {
-            errorMessage += " Email is invalid.";
-        }
-        if (!passwordFlag) {
-            errorMessage += " Password is weak.";
-        }
-        if (!confirmFlag) {
-            errorMessage += " Passwords do not match.";
-        }
         document.getElementById("error").innerHTML = errorMessage;
+        document.getElementById("error").style.color = "red";
     }
-}
-
-function alertOf(){
-    alert('Login First')
 }
