@@ -867,7 +867,9 @@ audio {
     body{
         margin: 2rem 0 0 0;
     }
-
+    .logodesign{
+        height: 80px;
+    }
     /*Home section*/
     .home .home-container{
         display: grid;

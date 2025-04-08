@@ -198,14 +198,14 @@ section{
     margin-right: auto;   
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,auto));
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 1.8rem;
     margin-bottom: 2.9rem;
     justify-content: center;
 }
 .box .box-video{
-    width: 360px;
-    height: 200px;
+    width: 350px;
+    height: 190px;
     cursor: pointer;
 }
 .box .box-video video{
@@ -302,7 +302,7 @@ section{
 
 /* Image Content */
 .img-content {
-    height: 240px;
+    height: 250px;
     width: 100%;
 }
 
@@ -568,10 +568,10 @@ section{
         grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     }
     .music-card {
-        height: 220px;
+        height: 205px;
     }
     .img-content {
-        height: 160px;
+        height: 140px;
     }
     .music-container {
         margin: 0px;

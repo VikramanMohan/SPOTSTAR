@@ -387,6 +387,7 @@ iframe{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+        margin: 0px;
     }
     .music-header{
         flex-direction: column;
@@ -401,14 +402,14 @@ iframe{
             margin-left: 15px;
         }
         iframe{
-            width :405px;
+            width :365px;
             height:225px;
             padding: 10px;
             margin: 0px;
         }
         .box .box-img{
-            width: 210px;
-            height: 320px;
+            width: 200px;
+            height: 270px;
             
         
         }

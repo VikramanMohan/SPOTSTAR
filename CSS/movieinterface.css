@@ -352,6 +352,7 @@ img{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+        margin: 0;
     }
     .music-header{
         flex-direction: column;
@@ -371,9 +372,11 @@ img{
         font-size: x-small;
     }
     .box .box-img{
-        width: 210px;
-        height: 295px;
-        
+        width: 200px;
+        height: 270px;
     
+    }
+    .box h3{
+        font-size: 1rem;
     }
 }

@@ -126,6 +126,13 @@ h2{
     
 }
 
+.heading{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--main-color);   
+}
+
   .movie-container
   {
     display: flex;
@@ -305,8 +312,9 @@ h2{
 
 @media (max-width: 474px){
     header{
-        padding: 8px 2%;
+        padding: 8px 4%;
     }
+    
     #menu-icon{
         display: initial;
         color: var(--bg-color);
@@ -316,7 +324,7 @@ h2{
     }
     .logodesign{
         
-        height: 50px;
+        height: 45px;
     }
     .navbar {
         position: absolute;
