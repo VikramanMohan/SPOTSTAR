@@ -134,17 +134,22 @@ section{
 .home-text{
     z-index: 1000;
     padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
 }
 .home-text span{
     color: var(--bg-color);
     font-weight: 500;
     text-transform: uppercase;
 }
+.home-text .heading-text {
+    position: absolute;
+    top:75%;
+}
 .home-text h1{
     color: var(--bg-color);
     font-size: 3rem;
     font-weight: 700;
-    margin-top: 27rem;
 }
 .play{
     position: absolute;
@@ -167,7 +172,7 @@ section{
 /* movies  */
 .heading{
     margin-top: 20px;
-    max-width: 1500px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
@@ -330,12 +335,15 @@ section{
         width: 100%;
         min-height: 500px;
     }
-    
+    .home-text .heading-text {
+        position: absolute;
+        top:80%;
+    }
     header{
         padding: 6px 4%;
     }
     .home-text h1{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
     .play{
         right: 2rem;
