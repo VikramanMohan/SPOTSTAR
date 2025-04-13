@@ -146,10 +146,9 @@ img{
 
 /* music  */
 .heading{
-    margin-top: 20px;
+    
     max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem 0rem 0rem 0.5rem;
     font-size: 1.2rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -313,12 +312,10 @@ img{
     .img-content .main-img{
         height: 400px;
     }
-    .box .box-img{
-        width: 260px;
-        height: 350px;
-        
-    
-    }
+    .box .box-img {
+        width: 220px;
+        height: 300px;
+      }
 }
 @media (max-width: 472px){
     .newsletter form .email{
@@ -359,9 +356,9 @@ img{
         justify-content: center;
         align-items: center;
     }
-    .heading{
-        margin-left: 14px;
-    }
+    .heading {
+        margin: 1rem 1rem;
+      }
     .img-content .main-img{
         margin-bottom: 0px;
     }
