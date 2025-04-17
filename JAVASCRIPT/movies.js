@@ -16,21 +16,7 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-function MovieNav(){
-  var choice=document.getElementById("movies").value
-  if(choice=='Tamil Movies'){
-    window.location.href='../HTML/Tamil.html'
-  }
-  else if(choice=='English Movies'){
-    window.location.href='../HTML/English.html'
-  }
-  else if(choice=='Malayalam Movies'){
-    window.location.href='../HTML/Malayalam.html'
-  }
-  else{
-    console.log("Invaild Choice")
-  }
-}
+
 
 var swiper = new Swiper(".home", {
     spaceBetween: 30,
@@ -44,6 +30,7 @@ var swiper = new Swiper(".home", {
       clickable: true,
     },
   });
+  
 var swiper = new Swiper(".coming-container", {
     spaceBetween: 20,
     loop: true,

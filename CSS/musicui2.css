@@ -278,6 +278,35 @@ audio{
     color: var(--bg-color);
 }
 
+/*Feature*/
+.my-playlist-section {
+    background: #202020;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 12px;
+    color: white;
+    font-family: sans-serif;
+}
+.my-playlist-section h2 {
+    margin-bottom: 15px;
+}
+#playlist-items li {
+    margin-bottom: 10px;
+}
+.remove-song {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.remove-song:hover {
+    background-color: darkred;
+}
+
+
 @media (max-width: 1400px) {
     .home-text {
         padding: 0 100px;

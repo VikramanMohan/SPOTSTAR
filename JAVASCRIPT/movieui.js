@@ -1,5 +1,15 @@
+let header = document.querySelector('header');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-// Object mapping movie categories to URLs
+// Toggle navbar
+menu.addEventListener('click', () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    navbar.style.transition = 'all 0.3s ease-in-out';
+});
+
+// Movie navigation
 const moviePages = {
     'Tamil Movies': '../HTML/Tamil.html',
     'English Movies': '../HTML/English.html',
@@ -11,33 +21,16 @@ function handleMovieNavigation() {
     const errorElement = document.getElementById('error');
 
     if (moviePages[choice]) {
-        // Navigate to the selected page
         window.location.href = moviePages[choice];
     } else if (choice === '') {
-        // Display error for no selection
         errorElement.textContent = 'Please select a language to proceed.';
     } else {
-        // Handle unexpected errors
         errorElement.textContent = 'Invalid choice. Please try again.';
         console.error('Invalid Choice');
     }
 }
 
-// Swiper for the home section
-const homeSwiper = new Swiper('.home', {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
-
-// Swiper for the "coming soon" movies section
+// Swiper configuration
 const comingSwiper = new Swiper('.coming-container', {
     spaceBetween: 20,
     loop: true,
@@ -54,12 +47,7 @@ const comingSwiper = new Swiper('.coming-container', {
     },
 });
 
-menu.addEventListener('click', () => {
-    menu.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-    navbar.style.transition = 'all 0.3s ease-in-out';
-});
-
+// Debounced scroll effect
 function debounce(func, delay) {
     let timeout;
     return function (...args) {
