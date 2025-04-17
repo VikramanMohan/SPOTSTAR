@@ -124,12 +124,13 @@ button {
   margin: 30px 20px 0px 0px;
   border-radius: 30px;
   background-color: #8498ea;
-  border: #8498ea solid 2px;
+  border: none;
   color: #fff;
   font-size: 1rem;
+  cursor: pointer;
 }
 button:hover {
-  background-color: #a4b3ee;
+  background-color: #526ac9;
   filter: drop-shadow(2px 2px 3px #222121);
 }
 
@@ -208,9 +209,10 @@ img {
 
 iframe {
   width: 1260px;
-  height: 680px;
+  height: 700px;
   padding: 20px;
-  margin-left: 130px;
+  margin-left: 125px;
+
 }
 
 /* footer  */
@@ -244,6 +246,7 @@ iframe {
 .copyright {
   padding: 20px;
   text-align: center;
+  margin-top: 60px;
   color: var(--bg-color);
 }
 
@@ -336,7 +339,7 @@ iframe {
     width: 625px;
     height: 355px;
     padding: 10px;
-    margin: 0px;
+    margin-left: 20px;
   }
   .music-header {
     width: 100%;
@@ -398,12 +401,14 @@ iframe {
   }
   .heading {
     margin: 1rem 1rem;
+    width: 95%;
   }
+
   iframe {
-    width: 365px;
-    height: 225px;
+    width: 335px;
+    height: 215px;
     padding: 10px;
-    margin-left: 12px;
+    margin-left: 20px;
   }
   .box .box-img {
     width: 190px;
