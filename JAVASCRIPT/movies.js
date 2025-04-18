@@ -55,3 +55,17 @@ var swiper = new Swiper(".coming-container", {
 
     }
   });
+
+  const playBtn = document.getElementById('playBtn');
+  const videoIframe = document.getElementById('videoIframe');
+  const watchlistBtn = document.getElementById('watchlistBtn');
+
+  playBtn.addEventListener('click', () => {
+    videoIframe.src = "https://www.youtube.com/embed/EmqDR8FOYxk?autoplay=1";
+  });
+
+  watchlistBtn.addEventListener('click', () => {
+    alert('Added to your Watchlist!');
+    watchlistBtn.innerHTML = '<i class="fa-solid fa-check icon"></i> Added';
+    watchlistBtn.disabled = true;
+  });

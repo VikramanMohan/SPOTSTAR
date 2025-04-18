@@ -279,7 +279,7 @@ audio{
 }
 
 /*Feature*/
-.my-playlist-section {
+/* .my-playlist-section {
     background: #202020;
     padding: 20px;
     margin: 40px;
@@ -304,7 +304,7 @@ audio{
 }
 .remove-song:hover {
     background-color: darkred;
-}
+} */
 
 
 @media (max-width: 1400px) {
