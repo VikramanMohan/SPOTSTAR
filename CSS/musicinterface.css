@@ -303,3 +303,40 @@ header.shadow .logo{
         border-radius: 8px;
     }
 }
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .heading {
+    animation: fadeInDown 1s ease forwards;
+    opacity: 0;
+  }
+  .box{
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+        transform: translateY(30px);
+      
+    }
+    100% {
+      opacity: 1;
+        transform: translateY(0);
+      
+    }
+  }
+  
