@@ -36,6 +36,30 @@ header{
     transition: 0.5s;
     
 }
+/* Add shadow effect on scroll */
+header.shadow{
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
+    box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
+
+}
+/* Navbar responsiveness */
+.navbar.active {
+    top: 100%; /* Push navbar into view */
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--bg-color);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Menu icon in active state */
+#menu-icon.bx-x {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
 
 .logodesign{
     align-items: center;
@@ -99,6 +123,14 @@ header{
 }
 h2{
     margin-left: 30px;
+    
+}
+
+.heading{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--main-color);   
 }
 
   .movie-container
@@ -149,14 +181,14 @@ h2{
 }
 .swiper-container {
     width: 100%;
-    max-width: 800px; /* Adjust width as needed */
+    max-width: 800px; 
     overflow: hidden;
   }
   
   .swiper-slide .box {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Rounds the corners */
+    border-radius: 8px; 
   }
 .copyright{
     padding-top: 20px;
@@ -165,9 +197,24 @@ h2{
 }
 
 /* responsive  */
+@media (max-width: 1400px){
+    .home-text{
+        padding: 0 100px;
+    }
+    .box .box-img{
+        width:220px;
+        height: 120px;
+
+    }
+}
 @media (max-width: 1080px){
     .home-text{
         padding: 0 100px;
+    }
+    .box .box-img{
+        width:220px;
+        height: 120px;
+
     }
 }
 @media (max-width: 991px){
@@ -183,6 +230,18 @@ h2{
     .home-text h1{
         font-size: 3rem;
     }
+    .box .box-img{
+        width:200px;
+        height: 100px;
+
+    }
+    .coming{
+        padding: 10px;
+    }
+    .coming h2{
+        margin-left: 10px;
+
+    }
 }
 @media (max-width: 774px){
     header{
@@ -193,29 +252,33 @@ h2{
         color: var(--bg-color);
     }
     header.shadow #menu-icon{
-        color: var(--text-color);
+        color: var(--bg-color);
     }
-    .navbar{
+    .navbar  {
         position: absolute;
         top: -570px;
         left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
-        background: var(--bg-color);
         row-gap: 1.4rem;
         padding: 20px;
-        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
         transition: 0.2s all linear;
         text-align: center;
         width: 100%;
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
+
     }
-    .navbar a{
-        color: var(--text-color);
-    }
-    .navbar a:hover{
+
+    .navbar a {
         color: var(--main-color);
-        border-bottom: 1px solid var(--main-color);
+        
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        border-bottom: 1px solid var(--text-color);
     }
     .navbar a::after{
         display: none;
@@ -230,6 +293,106 @@ h2{
         padding: 0.6rem 1.2rem;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+    .box .box-img{
+        width:200px;
+        height: 100px;
+
+    }
+    .coming{
+        padding: 10px;
+    }
+    .coming h2{
+        margin-left: 10px;
+
+    }
+    
+}
+
+@media (max-width: 474px){
+    header{
+        padding: 8px 4%;
+    }
+    
+    #menu-icon{
+        display: initial;
+        color: var(--bg-color);
+    }
+    header.shadow #menu-icon{
+        color: var(--bg-color);
+    }
+    .logodesign{
+        
+        height: 45px;
+    }
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
+        row-gap: 1.4rem;
+        padding: 20px;
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
+        transition: 0.2s all linear;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar a {
+        color: var(--main-color);
+    }
+
+    .navbar a:hover {
+        color: var(--text-color);
+        border-bottom: 1px solid var(--text-color);
+    }
+    .navbar a::after{
+        display: none;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        padding: 0.6rem 1.2rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+    
+    .box .box-img{
+        width:160px;
+        height: 90px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .coming-container{
+        gap: 5rem;
+    }
+    .coming{
+        padding: 10px;
+    }
+    .coming h2{
+        margin-left: 10px;
+
+    }
+    .swiper-slide h3{
+        font-size: 0.8rem;
+    }
+    .movies option{
+        font-size: 0.5rem;
+    }
+    .movies h2{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .copyright p{
+        font-size: x-small;
     }
 }

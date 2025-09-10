@@ -21,7 +21,7 @@
 
     <!-- menu  -->
     <ul class="navbar">
-        <li><a href="#home">Home</a></li>
+        <li><a href="../Homepage.html">Home</a></li>
         <li><a href="../musichome.html">Music</a></li>
         <li><a href="../Movieshome.html">Movies</a></li>
         <li><a href="../TrendingView.html">Trending</a></li>
@@ -29,37 +29,47 @@
 </header>
 
 
-<<div class="music-container">
-    <div class="music-header">
-        <div class="img-content">
-            <img src="../MEDIA/PHOTOS/BROKEN.jpg" alt="LATEST" >
-        </div>
-        <div class="img-details">
-            <h1 class="artist-name">BROKEN SONGS</h1>
-            
-            <div class="sub-details">
-                <p>Soup Song for the Broken Hits</p>
-                <div class="sug-img">
-                    <div class="sub-img">
-                        <a href="./Trending.html"><img src="../MEDIA/PHOTOS/TRENDING.jpg" class="ss"></a>
+<div class="music-container">
+     <!--Music Header-->
+     <section class="about section " id="about">
+        <div class="container flex-center">
+            <div class="content flex-center">
+                <div class="about-img">
+                    <img src="../MEDIA/PHOTOS/BROKEN.jpg" alt="LATEST" >
+                </div>
+                <div class="about-info">
+                    <div class="description">
+                        <h1 class="top-1">BROKEN HITS</h1>
+                        <h5 class="sub-heading">Soup Song for the Broken Hits
+                        </h5>
+                        <div class="img-details">
+                            <h1 class="artist-name"></h1>
+                            <div class="sub-details">
+                                <div class="sug-img">
+                                    <div class="sub-img">
+                                        <a href="./Latest.html"><img src="../MEDIA/PHOTOS/LATEST.jpg" class="ss"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./romance.html"><img src="../MEDIA/PHOTOS/ROMATIC.jpg" class="ss"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./motivational.html"><img src="../MEDIA/PHOTOS/MOTIVATIONAL.jpg" ></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./dance.html"><img src="../MEDIA/PHOTOS/DANCE.jpg" class="ss"></a>
+                                    </div>
+                                    <div class="sub-img">
+                                        <a href="./Trending.html"><img src="../MEDIA/PHOTOS/TRENDING.jpg" class="ss"></a>
+                                    </div>
+                                </div>                    
+                            </div>
+                        </div>
                     </div>
-                    <div class="sub-img">
-                        <a href="./dance.html"><img src="../MEDIA/PHOTOS/DANCE.jpg" class="ss"></a>
-                    </div>
-                    <div class="sub-img">
-                        <a href="./motivational.html"><img src="../MEDIA/PHOTOS/MOTIVATIONAL.jpg" class="ss"></a>
-                    </div>
-                    <div class="sub-img">
-                        <a href="./Latest.html"><img src="../MEDIA/PHOTOS/LATEST.jpg" class="ss"></a>
-                    </div>
-                    <div class="sub-img">
-                        <a href="./romance.html"><img src="../MEDIA/PHOTOS/ROMATIC.jpg" class="ss"></a>
-                    </div>
-                
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+  
     <h1 class="heading">Playlist</h1>
     <div class="song-1">
         <div class="musicplayer">
@@ -74,9 +84,8 @@
                 <audio src="../MEDIA/AUDIOS/Ava-Enna-Enna-MassTamilan.com.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -94,9 +103,8 @@
                 <audio src="../MEDIA/AUDIOS/Ennodu-Nee-Irundhal.mp3" controls></audio>
                 </div>
                 <div class="icons">
-                    <div class="icon-img"><i class='bx bx-heart'></i>
-                    <h6>Like</h6></div>
-                    <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                    <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                    <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                     <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
                 </div>
         </div>
@@ -114,9 +122,8 @@
             <audio src="../MEDIA/AUDIOS/Poo-Nee-Poo.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -134,9 +141,8 @@
                 <audio src="../MEDIA/AUDIOS/Loosu-Penne-MassTamilan.org.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -154,9 +160,8 @@
                 <audio src="../MEDIA/AUDIOS/Kadhal-Valarthen.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -174,9 +179,8 @@
                 <audio src="../MEDIA/AUDIOS/En-Kadhal-Solla.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -194,9 +198,8 @@
             <audio src="../MEDIA/AUDIOS/Kanave_Kanave_Full_Video_Song_David_Vikram_Jiiva_Naaser_Tabu_Lara_Dutta_[_YouConvert.net_].mp3" controls></audio> 
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -214,9 +217,8 @@
                 <audio src="../MEDIA/AUDIOS/Venmathiye.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -234,8 +236,8 @@
                 <audio src="../MEDIA/AUDIOS/Unna Nenachen.mp3" controls></audio> 
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i><h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -253,9 +255,8 @@
                         <audio src="../MEDIA/AUDIOS/Kaadal-Endral.mp3" controls></audio>
             </div>
             <div class="icons">
-                <div class="icon-img"><i class='bx bx-heart'></i>
-                <h6>Like</h6></div>
-                <div class="icon-img"><i class='bx bx-share' ></i> <h6>Share</h6></div>
+                <div class="icon-img like-btn" data-liked="false"><i class='bx bx-heart'></i><h6>Like</h6></div>
+                <div class="icon-img share-btn"><i class='bx bx-share' ></i> <h6>Share</h6></div>
                 <div class="icon-img"><i class='bx bxs-playlist ' ></i><h6>Playlist</h6></div>
             </div>
         </div>
@@ -294,43 +295,16 @@
                 </div>
             </div>
         </div>
+        </div>
 </div>
- <!-- footer  -->
- <section class="footer">
-    <a href="" class="logo">
-        <i class="bx bxs-music"></i>SPOTSTAR
-    </a>
-    <div class="social">
-        <a href=""><i class='bx bxl-facebook'></i></a>
-        <a href=""><i class='bx bxl-twitter'></i></a>
-        <a href=""><i class='bx bxl-instagram'></i></a>
-    </div>
-</section>
 
 <!-- Copyright  -->
 <div class="copyright">
 <p>&#169; Spotstar All Right Reserved</p>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    let header = document.querySelector('header');
 
-window.addEventListener('scroll', () =>{
-header.classList.toggle('shadow', window.scrollY > 0);
-});
 
-let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-menu.classList.toggle('bx-x');
-navbar.classList.toggle('active');
-}
-window.onscroll = () =>{
-menu.classList.remove('bx-x');
-navbar.classList.remove('active');
-}
-
-</script>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="../../JAVASCRIPT/musicfeature.js"></script>
 </body>
 </html>

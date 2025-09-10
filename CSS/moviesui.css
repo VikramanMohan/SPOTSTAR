@@ -37,8 +37,10 @@ header{
     
 }
 header.shadow{
-    background: var(--text-color);
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
     box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
+
 }
 header.shadow .navbar a{
     color: var(--bg-color);
@@ -132,17 +134,27 @@ section{
 .home-text{
     z-index: 1000;
     padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
 }
 .home-text span{
     color: var(--bg-color);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 10px rgb(0, 255, 255,0.5),0 0 20px rgb(0, 255, 255,0.5);
+
+}
+.home-text .heading-text {
+    position: absolute;
+    top:75%;
+    
 }
 .home-text h1{
     color: var(--bg-color);
     font-size: 3rem;
     font-weight: 700;
-    margin-top: 27rem;
 }
 .play{
     position: absolute;
@@ -165,7 +177,7 @@ section{
 /* movies  */
 .heading{
     margin-top: 20px;
-    max-width: 1500px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
@@ -208,37 +220,12 @@ section{
 
 
 
-/* footer  */
-.footer{
-    max-width: 968px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.social{
-    display: flex;
-    align-items: center;
-    column-gap: 0.5rem;
-}
-.social .bx{
-    background: var(--bg-color);
-    padding: 2px;
-    font-size: 2rem;
-    border-radius: 50%;
-    border: 4px solid rgb(2, 3, 7,0.4);
-    color: var(--main-color);
-}
-.social .bx:hover{
-    background: var(--main-color);
-    color: var(--bg-color);
-    transition: 0.2s all linear;
-}
 
 .copyright{
     padding: 20px;
     text-align: center;
     color: var(--bg-color);
+    margin-top: 60px;
 }
 
 /* responsive  */
@@ -270,29 +257,31 @@ section{
         color: var(--bg-color);
     }
     header.shadow #menu-icon{
-        color: var(--text-color);
+        color: var(--bg-color);
     }
-    .navbar{
+    .navbar {
         position: absolute;
         top: -570px;
         left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
-        background: var(--bg-color);
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
         row-gap: 1.4rem;
         padding: 20px;
-        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
         transition: 0.2s all linear;
         text-align: center;
         width: 100%;
     }
-    .navbar a{
-        color: var(--text-color);
+
+    .navbar a {
+        color: var(--bg-color);
     }
-    .navbar a:hover{
-        color: var(--main-color);
-        border-bottom: 1px solid var(--main-color);
+
+    .navbar a:hover {
+        color: var(--bg-color);
+        border-bottom: 1px solid var(--bg-color);
     }
     .navbar a::after{
         display: none;
@@ -311,6 +300,9 @@ section{
     }
 }
 @media (max-width: 472px){
+    .logodesign{
+        height: 50px;
+    }
     .newsletter form .email{
         width: auto;
     }
@@ -323,11 +315,15 @@ section{
         width: 100%;
         min-height: 500px;
     }
+    .home-text .heading-text {
+        position: absolute;
+        top:80%;
+    }
     header{
         padding: 6px 4%;
     }
     .home-text h1{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
     .play{
         right: 2rem;
@@ -338,5 +334,35 @@ section{
     }
     .movies-container{
         grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+        margin: 10px;
+    }
+    .box .box-img{
+        width: 150px;
+        height: 200px;
+        cursor: pointer;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  .box{
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+        transform: translateY(30px);
+      
+    }
+    100% {
+      opacity: 1;
+        transform: translateY(0);
+      
+    }
+  }
+  

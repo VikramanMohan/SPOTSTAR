@@ -31,16 +31,18 @@
     </header>
     <!--Navigation-->
     <div class="movie-container">
-        <div class="movies" id="movies">
+        <div class="movies">
             <h2>Choose Language</h2>
-            <select id="Nav" onchange="MovieNav()">
+            <select id="movies" onchange="handleMovieNavigation()">
+                <option value="">Select Your Choice</option>
                 <option value="Tamil Movies">Tamil Movies</option>
                 <option value="English Movies">English Movies</option>
                 <option value="Malayalam Movies">Malayalam Movies</option>
             </select>
         </div> 
+        <div id="error" style="color: red; margin-top: 10px;"></div>
     </div>
-     </div>
+    
 <!--Suggests Movies-->
      <section class="coming" id="coming">
         <h2 class="heading">New Releases</h2>
@@ -104,9 +106,9 @@
                         <a href="../HTML/Movies/virumandi.html"><img src="../HTML/MEDIA/PHOTOS/virumadiposter.jpg" alt=""></a>
                     </div>
                     <h3>Virumandi</h3>
-                
                 <!-- box-2  -->
-            </div><div class="swiper-slide box">
+            </div>
+            <div class="swiper-slide box">
                 <div class="box-img">
                     <a href="../HTML/Movies/bangaloredays.html"><img src="../HTML/MEDIA/PHOTOS/bangaloredays.jpg" alt=""></a>
                 </div>
@@ -144,33 +146,13 @@
         </div>
     </section>
 </div>
-
-
-
     <!-- Copyright  -->
     <div class="copyright">
         <p>&#169; Spotstar All Right Reserved</p>
     </div>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-   <script src="../JAVASCRIPT/movies.js"></script>
-    <script> 
-        function MovieNav() {
-            var choice = document.getElementById("Nav").value;
-                if (choice === 'Tamil Movies') {
-                    window.location.href = '../HTML/Tamil.html';
-                }
-            else if (choice === 'English Movies') {
-                window.location.href = '../HTML/English.html';
-             }
-            else if (choice === 'Malayalam Movies') {
-                window.location.href = '../HTML/Malayalam.html';
-             }
-            else { console.log("Invalid Choice"); 
-        }
-     }
-     </script>
+    <script src="../JAVASCRIPT/movieui.js"></script>
+
 </body>
 </html>

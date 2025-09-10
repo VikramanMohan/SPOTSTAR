@@ -37,8 +37,10 @@ header{
     
 }
 header.shadow{
-    background: var(--text-color);
+    background: linear-gradient(to bottom, #070737, #181656)transparent; /* from #2193b0 to #6dd5ed */
     box-shadow: 0 0 4px rgb(14 55 54/15%);
+    backdrop-filter: blur(20px);
+
 }
 header.shadow .navbar a{
     color: var(--bg-color);
@@ -153,7 +155,7 @@ section{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Align the text at the bottom */
+    justify-content: flex-end; 
     padding: 25px;
     z-index: 10;
     color: #fff; /* White text for visibility */
@@ -161,39 +163,48 @@ section{
 
 /* Styling for the span (Upcoming Movie) */
 .overlay span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 8px; /* Space between span and heading */
     color: #8498ea;
+    letter-spacing:2px;
+    text-shadow: 0 0 10px rgb(0, 255, 255,0.5),0 0 20px rgb(0, 255, 255,0.5);
+
 }
 
 /* Styling for the heading span (Movie title) */
 .overlay .heading-span {
     font-size: 2.5rem;
     font-weight: bold;
+    letter-spacing:7px;
+    text-shadow: 0 0 10px rgb(12, 15, 15,0.5),0 0 20px rgb(12, 15, 15,0.5);
+
 }
+
 
 .heading{
     margin-top: 20px;
     max-width: 1500px;
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     font-size: 2.2rem;
     font-weight: 600;
 }
+/* Movie Section */
+
 .movies-container{
     max-width: 1500px;
     align-items: center;
-    margin-left: 20px;
+    margin-left: auto;
     margin-right: auto;   
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    gap: 1.5rem;
     margin-top: 1.8rem;
     margin-bottom: 2.9rem;
+    justify-content: center;
 }
 .box .box-video{
-    width: 340px;
+    width: 350px;
     height: 190px;
     cursor: pointer;
 }
@@ -212,115 +223,165 @@ section{
 
 
 .box h3{
+    height: 50px;
+    width: 300px;
     margin-top: 20px;
     font-size: 1rem;
     font-weight: 600;
 }
 
+.music-container {
+    max-width: 1500px;
+    align-items: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 2.9rem;
+}
 
-.card {
-    position: relative;
-    width: 260px;
-    height: 330px;
+/* Music Card */
+.music-card {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
     border-radius: 10px;
     padding: 10px;
-  }
-  .card:hover{
+    background-image: linear-gradient(to bottom, #08186b, #070620);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.music-card:hover {
     transform: scale(1.05);
-    transition: 0.2s all linear;
-    box-shadow: 0 0 10px rgb(0, 255, 255,0.5),0 0 20px rgb(0, 255, 255,0.5);
-  }
-  .top {
-    position: relative;
-    width: 100%;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .pfp {
-    position: relative;
-    top: 210px;
-    left: 5px;
-    height: 40px;
-    width: 40px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .musicbox{
-    display: flex;
-    align-items: center;
-  }
-  .musicbox img{
-    position: absolute;
-    left: 1px;
-    bottom: 15px;
-    height: 230px;
-    width: 230px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5);
+}
 
-    border-radius: 10px;
-
-  }
-  .title-1 {
-    color: white;
-    font-size: 25px;
-    font-weight: bolder;
-    margin: 210px 20px 20px 0px;
-  }
-  
-  .title-2 {
-    color: lightgrey;
-    font-size: 12px;
-    font-weight: bold;
-    margin: -20px 20px 20px 0px;
-  }
-  
-  .playing {
+/* Playing Animation */
+.playing {
     display: flex;
     position: relative;
     justify-content: center;
     gap: 1px;
+    bottom: 25px;
+    left: 10px;
+    z-index: 100;
     width: 40px;
     height: 40px;
-  }
-  
-  .greenline {
+}
+
+.greenline {
     background-color: #e7eae8;
     height: 15px;
     width: 2px;
     position: relative;
     transform-origin: bottom;
-  }
-  button{
+}
+
+/* Button */
+.music-card .button {
     height: 40px;
     width: 40px;
-    position: absolute;
-    bottom: 20px;
-    left: 200px;
-   border-radius: 30px;
+    border-radius: 50%;
     background-color: #8498ea;
-    border: #8498ea solid 2px;
+    border: none;
     color: #fff;
     font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-button:hover{
+
+.button:hover {
     background-color: #a4b3ee;
-    filter: drop-shadow(2px 2px 3px #222121) ;
-    
+    box-shadow: 0 4px 8px rgba(132, 152, 234, 0.4);
 }
+
+/* Image Content */
+.img-content {
+    height: 250px;
+    width: 100%;
+}
+
+.img-content img {
+    display: block;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Music Content */
+.music-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.texts .title-1 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.texts .title-2 {
+    color: lightgrey;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* copyright */
 
 .copyright{
     padding: 20px;
     text-align: center;
     color: var(--bg-color);
+    margin-top: 60px;
 }
 
 /* responsive  */
 @media (max-width: 1080px){
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+      .movie-base {
+        flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+        max-width: calc(33.33% - 20px);
+    }
     .home-text{
         padding: 0 100px;
     }
+    .music-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.8rem;
+    }
+    .img-content {
+        height: 180px;
+    }
+    .music-card {
+        height: 260px;
+    }
+    .texts .title-1 {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    
+    .texts .title-2 {
+        color: lightgrey;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .box .box-video{
+        width: 300px;
+        height: 150px;
+        cursor: pointer;
+    }
+
 }
 @media (max-width: 991px){
     header{
@@ -335,6 +396,27 @@ button:hover{
     .home-text h1{
         font-size: 3rem;
     }
+    
+    .playing{
+        display: none;
+    }
+    .music-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.8rem;
+    }
+    .movies-container{
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+    .movie-base {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        max-width: calc(50% - 20px);
+    }
+    .music-card {
+        height: 280px;
+    }
+    .img-content {
+        height: 200px;
+    }
 }
 @media (max-width: 774px){
     header{
@@ -345,29 +427,31 @@ button:hover{
         color: var(--bg-color);
     }
     header.shadow #menu-icon{
-        color: var(--text-color);
+        color: var(--bg-color);
     }
-    .navbar{
+    .navbar {
         position: absolute;
         top: -570px;
         left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
-        background: var(--bg-color);
+        background: linear-gradient(to right, #0c0cdd, #0c0660)transparent;
         row-gap: 1.4rem;
         padding: 20px;
-        box-shadow: 4px 4px 0 4px rgb(14 55 54/15%);
+        box-shadow: 4px 4px 0 4px rgba(53, 188, 186, 0.15);
         transition: 0.2s all linear;
         text-align: center;
         width: 100%;
     }
-    .navbar a{
-        color: var(--text-color);
+
+    .navbar a {
+        color: var(--bg-color);
     }
-    .navbar a:hover{
-        color: var(--main-color);
-        border-bottom: 1px solid var(--main-color);
+
+    .navbar a:hover {
+        color: var(--bg-color);
+        border-bottom: 1px solid var(--bg-color);
     }
     .navbar a::after{
         display: none;
@@ -382,10 +466,80 @@ button:hover{
         padding: 0.6rem 1.2rem;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    }
+    .movie-base {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row */
+        max-width: calc(50% - 20px);
+    }
+    .music-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 0.8rem;
+    }
+
+    .music-card {
+        height: 300px;
+    }
+    .img-content {
+        height: 220px;
+    }
+
+    .texts .title-1 {
+        font-size: 1.2rem;
+    }
+
+    .texts .title-2 {
+        font-size: 0.8rem;
+    }
+
+    .music-card .button {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    .overlay span {
+        font-size: 1em;
+        letter-spacing:0.71px;
+        
+    }
+    
+    .overlay .heading-span {
+        font-size: 2em;
+        letter-spacing:4px;
+        margin-top: 0.7px;
+    
+    }
+    .box .box-video{
+        width: 300px;
+        height: 150px;
+        cursor: pointer;
     }
 }
+
+
+
+
+
+
 @media (max-width: 472px){
+     .movie-base {
+        flex: 1 1 100%; /* 1 item per row */
+        max-width: 100%;
+    }
+    .logodesign{
+        
+        height: 50px;
+    }
+    .heading {
+        font-size: 1.2rem;
+        padding: 0px;
+    }
+    .overlay .heading-span{
+        font-size: 1rem;
+    }
+    .box h3 {
+        font-size: 0.9rem;
+    }
     .newsletter form .email{
         width: auto;
     }
@@ -412,49 +566,77 @@ button:hover{
         padding: 7px;
     }
     .movies-container{
-        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    }
+    .music-card {
+        height: 205px;
+    }
+    .img-content {
+        height: 140px;
+    }
+    .music-container {
+        margin: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .texts .title-1 {
+        font-size: 0.7rem;
+    }
+
+    .texts .title-2 {
+        font-size: 0.5rem;
+    }
+
+    .music-card .button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    .box .box-video{
+        width: 300px;
+        height: 160px;
+        cursor: pointer;
     }
 }
-  .line-1 {
-    animation: infinite playing 1s ease-in-out;
+/*Animation Section*/
+
+.line-1,
+.line-2,
+.line-3,
+.line-4,
+.line-5 {
+    display: inline-block; /* Ensure elements are inline */
+    transform-origin: center bottom; /* Define scale origin */
+    animation: playing 1s ease-in-out infinite; /* Correct shorthand syntax */
+}
+
+.line-1 {
     animation-delay: 0.2s;
-  }
-  
-  .line-2 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-2 {
     animation-delay: 0.5s;
-  }
-  
-  .line-3 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-3 {
     animation-delay: 0.6s;
-  }
-  
-  .line-4 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-4 {
     animation-delay: 0s;
-  }
-  
-  .line-5 {
-    animation: infinite playing 1s ease-in-out;
+}
+.line-5 {
     animation-delay: 0.4s;
-  }
-  
-  @keyframes playing {
+}
+
+@keyframes playing {
     0% {
-      transform: scaleY(0.1);
+        transform: scaleY(0.1);
     }
-  
     33% {
-      transform: scaleY(0.6);
+        transform: scaleY(0.6);
     }
-  
     66% {
-      transform: scaleY(0.9);
+        transform: scaleY(0.9);
     }
-  
     100% {
-      transform: scaleY(0.1);
+        transform: scaleY(0.1);
     }
-  }
-  
+}

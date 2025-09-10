@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/trending.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" type="image/x-icon" href="../HTML/MEDIA/PHOTOS/logo2.png">
 
 </head>
@@ -21,10 +21,10 @@
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <!-- menu  -->
-        <ul class="navbar">
+        <ul class="navbar bar">
             <li><a href="../HTML/Homepage.html">Home</a></li>
             <li><a href="../HTML/musichome.html">Music</a></li>
-            <li><a href="../HTML/Movieshome.html">Movie</a></li>
+            <li><a href="../HTML/Movieshome.html">Movies    </a></li>
             <li><a href="../HTML/TrendingView.html" class="home-active">Trending</a></li>
             <li><a href="../../index.html">Logout</a></li>
         </ul>
@@ -35,34 +35,18 @@
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide container">
-                <video src="../HTML/MEDIA/VIDEOS/Amaran.mp4" autoplay muted loop></video>
+                <video src="../HTML/MEDIA/VIDEOS/Movies.mp4" autoplay muted loop></video>
                 <div class="overlay">
-                    <span>Upcoming Movie</span>
-                    <h1 class="heading-span">Amaran (2024)<br><p style="font-size: 2rem;">Action | Tamil</p></h1>
+                    <span>Upcoming </span>
+                    <h1 class="heading-span">LATEST BLOCKBUSTER MOVIES</p></h1>
                 </div>
             </div>
             <!-- Slide 2 -->
             <div class="swiper-slide container">
-                <video src="../HTML/MEDIA/VIDEOS/The Boys.mp4" autoplay muted loop></video>
+                <video src="../HTML/MEDIA/VIDEOS/TVSeries.mp4" autoplay muted loop></video>
                 <div class="overlay">
-                    <span>Upcoming Movie</span>
-                    <h1 class="heading-span">The Boys (2024)<p style="font-size: 2rem;">Action | English</p></h1>
-                </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide container">
-                <video src="../HTML/MEDIA/VIDEOS/Kishkidha Kandam.mp4" autoplay muted loop></video>
-                <div class="overlay">
-                    <span>Upcoming Movie</span>
-                    <h1 class="heading-span">Kishkidha Kandam (2024)<p style="font-size: 2rem;">Thriller | Malayalam</p></h1>
-                </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="swiper-slide container">
-                <video src="../HTML/MEDIA/VIDEOS/Lubber Panbu.mp4" autoplay muted loop></video>
-                <div class="overlay">
-                    <span>Upcoming Movie</span>
-                    <h1 class="heading-span">Lubber Panbu (2024)<p style="font-size: 2rem;">Drama | Tamil</p></h1>
+                    <span>Upcoming </span>
+                    <h1 class="heading-span">BEST TV SERIES</p></h1>
                 </div>
             </div>
         </div>
@@ -70,147 +54,130 @@
     </section>
     
 
+    <div class="music-section">
+        <h2 class="heading">Trending Music</h2>
+    
         <div class="music-container">
-            <div class="box">
-<div class="movies" id="movies">
-    <h2 class="heading">Trending Music</h2>
+            <div class="music-card">
+                <div class="img-content">
+                    <img src="../HTML/MEDIA/PHOTOS/matta.jpg" alt="matta">
+                    <div class="playing">
+                        <div class="greenline line-1"></div>
+                        <div class="greenline line-2"></div>
+                        <div class="greenline line-3"></div>
+                        <div class="greenline line-4"></div>
+                        <div class="greenline line-5"></div>
+                    </div>
+                </div>
+                <div class="music-content">
+                    <div class="texts">
+                        <p class="title-1"> Matta</p>
+                        <p class="title-2">Vibe playlist Hits</p>
+                    </div>
+                    <a href="./Music/shsree.html" class="button">
+                        <i class="fa-solid fa-play icon"></i>
+                    </a>
+                </div>
+            </div>
 
-    <!-- Movies container  -->
-    <div class="movies-container">
-        <!-- box-1  -->
-        <div class="box">
-            <div class="box-img">
-                <div class="card">
-                    <div class="top">
-                    <div class="pfp">
-                        <div class="musicbox">
-                            <img src="../HTML/MEDIA/PHOTOS/matta.jpg" alt="">
-                        </div>
-                        <div class="playing">
+            <div class="music-card">
+                <div class="img-content">
+                    <img src="../HTML/MEDIA/PHOTOS/arr.jpg" alt="arr">
+                    <div class="playing">
                         <div class="greenline line-1"></div>
                         <div class="greenline line-2"></div>
                         <div class="greenline line-3"></div>
                         <div class="greenline line-4"></div>
                         <div class="greenline line-5"></div>
-                        </div>
                     </div>
-                    </div>
+                </div>
+                <div class="music-content">
                     <div class="texts">
-                    <p class="title-1">Matta</p>
-                    <p class="title-2">Vibe Playlist Hits</p>
+                        <p class="title-1">IsaiPuzal</p>
+                        <p class="title-2">Favorite Musicians</p>
                     </div>
-                    <a href="./Music/Trending.html"><button><i class="fa-solid fa-play icon"></i></button></a>
-                </div>            
+                    <a href="./Music/shsree.html" class="button">
+                        <i class="fa-solid fa-play icon"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="box-img">
-                <div class="card">
-                    <div class="top">
-                    <div class="pfp">
-                        <div class="musicbox">
-                            <img src="../HTML/MEDIA/PHOTOS/arr.jpg" alt="">
-                        </div>
-                        <div class="playing">
+
+            <div class="music-card">
+                <div class="img-content">
+                    <img src="../HTML/MEDIA/PHOTOS/thalapathimusic.jpg" alt="Shakthishree">
+                    <div class="playing">
                         <div class="greenline line-1"></div>
                         <div class="greenline line-2"></div>
                         <div class="greenline line-3"></div>
                         <div class="greenline line-4"></div>
                         <div class="greenline line-5"></div>
-                        </div>
                     </div>
-                    </div>
+                </div>
+                <div class="music-content">
                     <div class="texts">
-                        <p class="title-1">IsaiPuzal Hits</p>
-                        <p class="title-2">Music Directors Playlist</p>
+                        <p class="title-1">Thalapathi</p>
+                        <p class="title-2">Hit Albums </p>
                     </div>
-                    <a href="./Music/arr.html"><button><i class="fa-solid fa-play icon"></i></button></a>
-                </div>            
+                    <a href="./Music/shsree.html" class="button">
+                        <i class="fa-solid fa-play icon"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="box-img">
-                <div class="card">
-                    <div class="top">
-                        <div class="pfp">
-                        <div class="musicbox">
-                            <img src="../HTML/MEDIA/PHOTOS/thalapathimusic.jpg" alt="">
-                        </div>
-                        <div class="playing">
+
+            <div class="music-card">
+                <div class="img-content">
+                    <img src="../HTML/MEDIA/PHOTOS/vairamuthu.jpg" alt="Shakthishree">
+                    <div class="playing">
                         <div class="greenline line-1"></div>
                         <div class="greenline line-2"></div>
                         <div class="greenline line-3"></div>
                         <div class="greenline line-4"></div>
                         <div class="greenline line-5"></div>
-                        </div>
                     </div>
-                    </div>
+                </div>
+                <div class="music-content">
                     <div class="texts">
-                    <p class="title-1">Thalapathy</p>
-                    <p class="title-2">Hit Albums Playlist</p>
+                        <p class="title-1">Vairamuthu</p>
+                        <p class="title-2">Lyricist Collection </p>
                     </div>
-                    <a href="./Music/thalapathi.html"><button><i class="fa-solid fa-play icon"></i></button></a>
-                </div>            
+                    <a href="./Music/shsree.html" class="button">
+                        <i class="fa-solid fa-play icon"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="box">
-            <div class="box-img">
-                <div class="card">
-                    <div class="top">
-                    <div class="pfp">
-                        <div class="musicbox">
-                            <img src="../HTML/MEDIA/PHOTOS/namuthu.jpg" alt="">
-                        </div>
-                        <div class="playing">
+
+            <div class="music-card">
+                <div class="img-content">
+                    <img src="../HTML/MEDIA/PHOTOS/shsree2.jpg" alt="Shakthishree">
+                    <div class="playing">
                         <div class="greenline line-1"></div>
                         <div class="greenline line-2"></div>
                         <div class="greenline line-3"></div>
                         <div class="greenline line-4"></div>
                         <div class="greenline line-5"></div>
-                        </div>
                     </div>
-                    </div>
+                </div>
+                <div class="music-content">
                     <div class="texts">
-                    <p class="title-1">Na Muthu</p>
-                    <p class="title-2">Lyricist Hit Collection</p>
+                        <p class="title-1">Shakthishree</p>
+                        <p class="title-2">Playback Singer Hits </p>
                     </div>
-                    <a href="./Music/muthu.html"><button><i class="fa-solid fa-play icon"></i></button></a>
-                </div>            
-            </div>
-        </div>
-        <div class="box">
-            <div class="box-img">
-                <div class="card">
-                    <div class="top">
-                    <div class="pfp">
-                        <div class="musicbox">
-                            <img src="../HTML/MEDIA/PHOTOS/shsree2.jpg">
-                        </div>
-                        <div class="playing">
-                        <div class="greenline line-1"></div>
-                        <div class="greenline line-2"></div>
-                        <div class="greenline line-3"></div>
-                        <div class="greenline line-4"></div>
-                        <div class="greenline line-5"></div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="texts">
-                    <p class="title-1">Shakthishree </p>
-                    <p class="title-2">Playback Singer Hits</p>
-                    </div>
-                    <a href="./Music/shsree.html"><button><i class="fa-solid fa-play icon"></i></button></a>
-                </div>            
+                    <a href="./Music/shsree.html" class="button">
+                        <i class="fa-solid fa-play icon"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="movies" id="movies">
-    <h2 class="heading">Trending Movies</h2>
-    <!-- Movies container -->
+    
+<div class="movies-container">
+    <div class="box">
+    <div class="movies" id="movies">
+        <h2 class="heading">Trending Movies</h2>
+        <!-- Movies container -->
     <div class="movies-container">
         <!-- box-1 -->
+        <div class="movie-base">
         <div class="box">
             <div class="box-video">
                 <a href="../HTML/Movies/Meiyazhagan.html">
@@ -221,8 +188,11 @@
             </div>
             <h3>Meiyazhagan | Drama</h3>
         </div>
+    </div>
         <!-- box-2 -->
+        <div class="movie-base">
         <div class="box">
+            
             <div class="box-video">
                 <a href="../HTML/Movies/dune2.html">
                     <video src="../HTML/MEDIA/VIDEOS/Dune Part Two.mp4" type="video/mp4" loop class="clip" 
@@ -232,7 +202,9 @@
             </div>
             <h3>Dune Part Two | Sci-Fi</h3>
         </div>
+    </div>
         <!-- box-3 -->
+        <div class="movie-base">
         <div class="box">
             <div class="box-video">
                 <a href="../HTML/Movies/premalumovie.html">
@@ -243,7 +215,9 @@
             </div>
             <h3>Premalu | Romance</h3>
         </div>
+    </div>
         <!-- box-4 -->
+        <div class="movie-base">
         <div class="box">
             <div class="box-video">
                 <a href="../HTML/Movies/deadpoolandwolverine.html">
@@ -252,18 +226,20 @@
                     </video>
                 </a>
             </div>
-            <h3>Deadpool & Wolverine | Action</h3>
+                <h3>Deadpool & Wolverine | Action</h3>
+                </div>
+            </div>
+        </div>
+        </div>
         </div>
     </div>
-</div>
-
-
     <!-- Copyright  -->
     <div class="copyright">
         <p>&#169; Spotstar All Right Reserved</p>
     </div>
+</div>
 
-
+    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../JAVASCRIPT/trendingpage.js"></script>

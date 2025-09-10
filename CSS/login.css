@@ -12,23 +12,24 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
+    overflow-y: auto;
 }
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
-
+    height: 110vh;
 }
 img{
     position: relative  ;
     top: 15px;
-    left: 80px;
+    left: 0;
+    justify-content: center ;
     user-select: none;
     align-items: center;
     display: flex;
     column-gap: 0.5rem;
-    height: 70px;
+    height: 55px;
 }
 .nav{
     position: fixed;
@@ -93,7 +94,7 @@ img{
     align-items: center;
     justify-content: center;
     width: 512px;
-    height: 560px;
+    height: 570px;
     overflow: hidden;
     z-index: 2;
 }
@@ -103,8 +104,7 @@ img{
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    text-align: left;
 }
 .top h1{
     color: #fff;
@@ -232,6 +232,69 @@ header{
 .two label a:hover{
     text-decoration: underline;
 }
+* Main Container */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10vh auto;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.heading1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(243, 243, 243, 0.5);
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.paragraph {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(2, 0, 0, 0.5);
+
+}
+.sub-paragraph {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Button */
+.btns .submit {
+   
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btns .submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
 @media only screen and (max-width: 786px){
     .nav-button{
         display: none;
@@ -269,14 +332,77 @@ header{
     .nav-menu-btn i:hover{
         background: rgba(255, 255, 255, 0.15);
     }
-}
-@media only screen and (max-width: 540px) {
+
+    .top h1{
+        font-size: 1.6rem;
+        text-align: center;
+
+    }
+    .top h2{
+        font-size: 0.4rem;
+        text-align: center;
+    
+    }
+    .top .heading-3{
+        font-size: 1.7rem;
+    
+    }
+
+    .welcome-index{
+        width: 350px;
+        height: 200px;
+        text-align: left;
+        align-items: flex-start;
+        margin: 100px 0 30px 0;    }
     .wrapper{
-        min-height: 100vh;
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+        height: auto;
+    }
+    .login-container{
+        width: 350px;
+        left:20%;
+    }
+    .register-container{
+        width: 350px;
+    }
+    
+    .text-container{
+        margin-top: 200px;
+    }
+    .heading1 {
+        font-size: 2.3rem;
+    }
+    .paragraph {
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+    .sub-paragraph {
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 472px) {
+    .wrapper{
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+        height: auto;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
     }
     .form-box{
         width: 100%;
-        height: 500px;
+        height: 700px;
+    }
+    .login-container{
+        width: 350px;
+        left:0%;
+    }
+    .register-container{
+        width: 350px;
     }
     .register-container, .login-container{
         width: 100%;
@@ -285,5 +411,31 @@ header{
     .register-container .two-forms{
         flex-direction: column;
         gap: 0;
+    }
+    .heading1 {
+        font-size: 1.7rem;
+    }
+    
+    .paragraph {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+    .sub-paragraph {
+        font-size: 0.9rem;
+    }
+    .top{
+        padding: 15px;
+    }
+    .top h1{
+        font-size: 25px;
+    }
+    .top h2{
+        font-size:5px;
+    }
+    .top .heading-3{
+        font-size: medium;
+    }
+    .welcome-index{
+        margin-bottom: 0px;
     }
 }
